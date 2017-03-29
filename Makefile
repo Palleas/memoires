@@ -3,7 +3,7 @@ SWIFT_GEN=swiftgen
 ROME=rome
 
 update:
-	$(CARTHAGE) update --platform ios
+	$(CARTHAGE) update --platform ios --no-use-binaries
 	$(ROME) upload
 
 deps:
