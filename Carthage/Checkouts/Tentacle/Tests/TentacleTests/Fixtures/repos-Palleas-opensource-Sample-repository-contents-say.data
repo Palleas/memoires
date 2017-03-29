@@ -1,0 +1,17 @@
+{
+  "target" : "\/usr\/bin\/say",
+  "git_url" : "https:\/\/api.github.com\/repos\/Palleas-opensource\/Sample-repository\/git\/blobs\/1e3f1fd0bc1f65cf4701c217f4d1fd9a3cd50721",
+  "_links" : {
+    "git" : "https:\/\/api.github.com\/repos\/Palleas-opensource\/Sample-repository\/git\/blobs\/1e3f1fd0bc1f65cf4701c217f4d1fd9a3cd50721",
+    "html" : "https:\/\/github.com\/Palleas-opensource\/Sample-repository\/blob\/master\/say",
+    "self" : "https:\/\/api.github.com\/repos\/Palleas-opensource\/Sample-repository\/contents\/say?ref=master"
+  },
+  "html_url" : "https:\/\/github.com\/Palleas-opensource\/Sample-repository\/blob\/master\/say",
+  "download_url" : "https:\/\/raw.githubusercontent.com\/Palleas-opensource\/Sample-repository\/master\/say",
+  "size" : 12,
+  "sha" : "1e3f1fd0bc1f65cf4701c217f4d1fd9a3cd50721",
+  "path" : "say",
+  "type" : "symlink",
+  "name" : "say",
+  "url" : "https:\/\/api.github.com\/repos\/Palleas-opensource\/Sample-repository\/contents\/say?ref=master"
+}

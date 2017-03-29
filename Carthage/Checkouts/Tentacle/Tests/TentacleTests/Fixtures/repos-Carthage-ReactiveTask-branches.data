@@ -1,0 +1,23 @@
+[
+  {
+    "name" : "debuggin",
+    "commit" : {
+      "sha" : "117775803ff583c467dac3cd2c923b8d3f7d1869",
+      "url" : "https:\/\/api.github.com\/repos\/Carthage\/ReactiveTask\/commits\/117775803ff583c467dac3cd2c923b8d3f7d1869"
+    }
+  },
+  {
+    "name" : "master",
+    "commit" : {
+      "sha" : "567f8849cddadcd2469bafcad9d4f700ba4df881",
+      "url" : "https:\/\/api.github.com\/repos\/Carthage\/ReactiveTask\/commits\/567f8849cddadcd2469bafcad9d4f700ba4df881"
+    }
+  },
+  {
+    "name" : "playground",
+    "commit" : {
+      "sha" : "131709d54e1157699e44300cb9b9f8d22f2807e7",
+      "url" : "https:\/\/api.github.com\/repos\/Carthage\/ReactiveTask\/commits\/131709d54e1157699e44300cb9b9f8d22f2807e7"
+    }
+  }
+]

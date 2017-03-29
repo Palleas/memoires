@@ -1,0 +1,17 @@
+[Cache]
+  S3-Bucket = buddybuild-test-carthage-rome
+  local = ~/Library/Caches/Rome/
+
+[RepositoryMap]
+  XCGLogger = XCGLogger (iOS)
+  Nimble = Nimble-iOS
+  Quick = Quick-iOS
+  ReactiveCocoa = ReactiveCocoa-iOS
+  ReactiveSwift = ReactiveSwift-iOS
+  Result = Result-iOS
+  YamlSwift = Yaml iOS
+  keychain-swift
+  Tentacle = Tentacle-iOS
+  Argo = Argo-iOS
+  Curry = Curry-iOS
+  Runes = Runes-iOS

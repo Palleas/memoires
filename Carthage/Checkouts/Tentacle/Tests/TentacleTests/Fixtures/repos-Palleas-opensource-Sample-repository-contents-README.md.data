@@ -1,0 +1,18 @@
+{
+  "encoding" : "base64",
+  "download_url" : "https:\/\/raw.githubusercontent.com\/Palleas-opensource\/Sample-repository\/master\/README.md",
+  "url" : "https:\/\/api.github.com\/repos\/Palleas-opensource\/Sample-repository\/contents\/README.md?ref=master",
+  "path" : "README.md",
+  "size" : 19,
+  "type" : "file",
+  "git_url" : "https:\/\/api.github.com\/repos\/Palleas-opensource\/Sample-repository\/git\/blobs\/28ec72028c4ae47de689964a23ebb223f10cfe80",
+  "html_url" : "https:\/\/github.com\/Palleas-opensource\/Sample-repository\/blob\/master\/README.md",
+  "_links" : {
+    "git" : "https:\/\/api.github.com\/repos\/Palleas-opensource\/Sample-repository\/git\/blobs\/28ec72028c4ae47de689964a23ebb223f10cfe80",
+    "html" : "https:\/\/github.com\/Palleas-opensource\/Sample-repository\/blob\/master\/README.md",
+    "self" : "https:\/\/api.github.com\/repos\/Palleas-opensource\/Sample-repository\/contents\/README.md?ref=master"
+  },
+  "sha" : "28ec72028c4ae47de689964a23ebb223f10cfe80",
+  "name" : "README.md",
+  "content" : "IyBTYW1wbGUtcmVwb3NpdG9yeQ==\n"
+}

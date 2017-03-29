@@ -1,0 +1,34 @@
+[
+  {
+    "_links" : {
+      "git" : "https:\/\/api.github.com\/repos\/mdiep\/Tentacle\/git\/blobs\/3b6fd366cd32ef147c27ad49353b29f1ef5daf1c",
+      "html" : "https:\/\/github.com\/mdiep\/Tentacle\/blob\/master\/update-test-fixtures\/Info.plist",
+      "self" : "https:\/\/api.github.com\/repos\/mdiep\/Tentacle\/contents\/update-test-fixtures\/Info.plist?ref=master"
+    },
+    "git_url" : "https:\/\/api.github.com\/repos\/mdiep\/Tentacle\/git\/blobs\/3b6fd366cd32ef147c27ad49353b29f1ef5daf1c",
+    "html_url" : "https:\/\/github.com\/mdiep\/Tentacle\/blob\/master\/update-test-fixtures\/Info.plist",
+    "download_url" : "https:\/\/raw.githubusercontent.com\/mdiep\/Tentacle\/master\/update-test-fixtures\/Info.plist",
+    "size" : 1086,
+    "sha" : "3b6fd366cd32ef147c27ad49353b29f1ef5daf1c",
+    "path" : "update-test-fixtures\/Info.plist",
+    "type" : "file",
+    "name" : "Info.plist",
+    "url" : "https:\/\/api.github.com\/repos\/mdiep\/Tentacle\/contents\/update-test-fixtures\/Info.plist?ref=master"
+  },
+  {
+    "_links" : {
+      "git" : "https:\/\/api.github.com\/repos\/mdiep\/Tentacle\/git\/blobs\/e3fe7edcb2247a69c6eade1719d1e0cd83595cf9",
+      "html" : "https:\/\/github.com\/mdiep\/Tentacle\/blob\/master\/update-test-fixtures\/main.swift",
+      "self" : "https:\/\/api.github.com\/repos\/mdiep\/Tentacle\/contents\/update-test-fixtures\/main.swift?ref=master"
+    },
+    "git_url" : "https:\/\/api.github.com\/repos\/mdiep\/Tentacle\/git\/blobs\/e3fe7edcb2247a69c6eade1719d1e0cd83595cf9",
+    "html_url" : "https:\/\/github.com\/mdiep\/Tentacle\/blob\/master\/update-test-fixtures\/main.swift",
+    "download_url" : "https:\/\/raw.githubusercontent.com\/mdiep\/Tentacle\/master\/update-test-fixtures\/main.swift",
+    "size" : 2340,
+    "sha" : "e3fe7edcb2247a69c6eade1719d1e0cd83595cf9",
+    "path" : "update-test-fixtures\/main.swift",
+    "type" : "file",
+    "name" : "main.swift",
+    "url" : "https:\/\/api.github.com\/repos\/mdiep\/Tentacle\/contents\/update-test-fixtures\/main.swift?ref=master"
+  }
+]

@@ -1,0 +1,1290 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		61377C781C8A2B760081FF24 /* Tentacle.h in Headers */ = {isa = PBXBuildFile; fileRef = BE88E7F51C88C6B30034A112 /* Tentacle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		61377C791C8A2B760081FF24 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE88E80C1C88C72B0034A112 /* Client.swift */; };
+		61377C7A1C8A2B760081FF24 /* Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0F40A31C89135D00E3B11A /* Decodable.swift */; };
+		61377C7B1C8A2B760081FF24 /* GitHubError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB0765C1C8A001C00ABD373 /* GitHubError.swift */; };
+		61377C7C1C8A2B760081FF24 /* Release.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE88E8311C88D33D0034A112 /* Release.swift */; };
+		61377C7D1C8A2B760081FF24 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE88E82F1C88CDAB0034A112 /* Repository.swift */; };
+		61377C7E1C8A2B760081FF24 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE88E82C1C88C94D0034A112 /* Server.swift */; };
+		619081821C8A2D2B001BE2F8 /* Tentacle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61377C6C1C8A2B2C0081FF24 /* Tentacle.framework */; };
+		619081881C8A2DB7001BE2F8 /* Fixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0F409F1C89098E00E3B11A /* Fixture.swift */; };
+		619081891C8A2DB7001BE2F8 /* GitHubErrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB0765E1C8A019A00ABD373 /* GitHubErrorTests.swift */; };
+		6190818A1C8A2DB7001BE2F8 /* ReleaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0F40A11C8909EB00E3B11A /* ReleaseTests.swift */; };
+		6190818B1C8A2DB7001BE2F8 /* (null) in Sources */ = {isa = PBXBuildFile; };
+		7A072D8E1DED11C900CFE58F /* ContentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A072D8D1DED11C900CFE58F /* ContentTests.swift */; };
+		7A072D8F1DED11C900CFE58F /* ContentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A072D8D1DED11C900CFE58F /* ContentTests.swift */; };
+		7A1A82561CF3DBAC0076E2DD /* Issue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1A82551CF3DBAC0076E2DD /* Issue.swift */; };
+		7A1A82581CF3DE4C0076E2DD /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1A82571CF3DE4C0076E2DD /* Label.swift */; };
+		7A1A825A1CF3DEEA0076E2DD /* Milestone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1A82591CF3DEEA0076E2DD /* Milestone.swift */; };
+		7A1A825E1CF3E5B60076E2DD /* PullRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1A825D1CF3E5B60076E2DD /* PullRequest.swift */; };
+		7A1F20ED1D3E85BB00F275F8 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1F20EC1D3E85BB00F275F8 /* Color.swift */; };
+		7A1F20EE1D3E862200F275F8 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1F20EC1D3E85BB00F275F8 /* Color.swift */; };
+		7A1F20F01D3E86D900F275F8 /* ColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1F20EF1D3E86D900F275F8 /* ColorTests.swift */; };
+		7A1F20F11D3E872800F275F8 /* ColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1F20EF1D3E86D900F275F8 /* ColorTests.swift */; };
+		7A22EDBC1E47CB8900524539 /* EndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A22EDBB1E47CB8900524539 /* EndpointTests.swift */; };
+		7A22EDBD1E47CB8900524539 /* EndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A22EDBB1E47CB8900524539 /* EndpointTests.swift */; };
+		7A27887A1D4920DA007AC936 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2788791D4920DA007AC936 /* Comment.swift */; };
+		7A27887C1D49223B007AC936 /* CommentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A27887B1D49223B007AC936 /* CommentsTests.swift */; };
+		7A27887D1D49223B007AC936 /* CommentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A27887B1D49223B007AC936 /* CommentsTests.swift */; };
+		7A27887E1D49223E007AC936 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2788791D4920DA007AC936 /* Comment.swift */; };
+		7A2F66101CF527EB00463602 /* IssuesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAB00FC1CF51FC5005A7319 /* IssuesTests.swift */; };
+		7A2F66111CF527FB00463602 /* Issue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1A82551CF3DBAC0076E2DD /* Issue.swift */; };
+		7A2F66121CF5280200463602 /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1A82571CF3DE4C0076E2DD /* Label.swift */; };
+		7A2F66131CF5280600463602 /* Milestone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1A82591CF3DEEA0076E2DD /* Milestone.swift */; };
+		7A2F66141CF5281200463602 /* PullRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1A825D1CF3E5B60076E2DD /* PullRequest.swift */; };
+		7A3CC65C1E01BC200025E711 /* repos-mdiep-Tentacle-contents-Carthage-Checkouts-ReactiveSwift.data in Resources */ = {isa = PBXBuildFile; fileRef = 7A3CC6361E01BC200025E711 /* repos-mdiep-Tentacle-contents-Carthage-Checkouts-ReactiveSwift.data */; };
+		7A3CC65D1E01BC200025E711 /* repos-mdiep-Tentacle-contents-Carthage-Checkouts-ReactiveSwift.data in Resources */ = {isa = PBXBuildFile; fileRef = 7A3CC6361E01BC200025E711 /* repos-mdiep-Tentacle-contents-Carthage-Checkouts-ReactiveSwift.data */; };
+		7A3CC65E1E01BC200025E711 /* repos-mdiep-Tentacle-contents-Carthage-Checkouts-ReactiveSwift.response in Resources */ = {isa = PBXBuildFile; fileRef = 7A3CC6371E01BC200025E711 /* repos-mdiep-Tentacle-contents-Carthage-Checkouts-ReactiveSwift.response */; };
+		7A3CC65F1E01BC200025E711 /* repos-mdiep-Tentacle-contents-Carthage-Checkouts-ReactiveSwift.response in Resources */ = {isa = PBXBuildFile; fileRef = 7A3CC6371E01BC200025E711 /* repos-mdiep-Tentacle-contents-Carthage-Checkouts-ReactiveSwift.response */; };
+		7A3CC6601E01BC200025E711 /* repos-Palleas-opensource-Sample-repository-contents-README.md.data in Resources */ = {isa = PBXBuildFile; fileRef = 7A3CC6381E01BC200025E711 /* repos-Palleas-opensource-Sample-repository-contents-README.md.data */; };
+		7A3CC6611E01BC200025E711 /* repos-Palleas-opensource-Sample-repository-contents-README.md.data in Resources */ = {isa = PBXBuildFile; fileRef = 7A3CC6381E01BC200025E711 /* repos-Palleas-opensource-Sample-repository-contents-README.md.data */; };
+		7A3CC6621E01BC200025E711 /* repos-Palleas-opensource-Sample-repository-contents-README.md.response in Resources */ = {isa = PBXBuildFile; fileRef = 7A3CC6391E01BC200025E711 /* repos-Palleas-opensource-Sample-repository-contents-README.md.response */; };
+		7A3CC6631E01BC200025E711 /* repos-Palleas-opensource-Sample-repository-contents-README.md.response in Resources */ = {isa = PBXBuildFile; fileRef = 7A3CC6391E01BC200025E711 /* repos-Palleas-opensource-Sample-repository-contents-README.md.response */; };
+		7A3CC6641E01BC200025E711 /* repos-Palleas-opensource-Sample-repository-contents-Tools-say.data in Resources */ = {isa = PBXBuildFile; fileRef = 7A3CC63A1E01BC200025E711 /* repos-Palleas-opensource-Sample-repository-contents-Tools-say.data */; };
+		7A3CC6651E01BC200025E711 /* repos-Palleas-opensource-Sample-repository-contents-Tools-say.data in Resources */ = {isa = PBXBuildFile; fileRef = 7A3CC63A1E01BC200025E711 /* repos-Palleas-opensource-Sample-repository-contents-Tools-say.data */; };
+		7A3CC6661E01BC200025E711 /* repos-Palleas-opensource-Sample-repository-contents-Tools-say.response in Resources */ = {isa = PBXBuildFile; fileRef = 7A3CC63B1E01BC200025E711 /* repos-Palleas-opensource-Sample-repository-contents-Tools-say.response */; };
+		7A3CC6671E01BC200025E711 /* repos-Palleas-opensource-Sample-repository-contents-Tools-say.response in Resources */ = {isa = PBXBuildFile; fileRef = 7A3CC63B1E01BC200025E711 /* repos-Palleas-opensource-Sample-repository-contents-Tools-say.response */; };
+		7A3CC6681E01BC200025E711 /* repos-Palleas-opensource-Sample-repository-contents-Tools.data in Resources */ = {isa = PBXBuildFile; fileRef = 7A3CC63C1E01BC200025E711 /* repos-Palleas-opensource-Sample-repository-contents-Tools.data */; };
+		7A3CC6691E01BC200025E711 /* repos-Palleas-opensource-Sample-repository-contents-Tools.data in Resources */ = {isa = PBXBuildFile; fileRef = 7A3CC63C1E01BC200025E711 /* repos-Palleas-opensource-Sample-repository-contents-Tools.data */; };
+		7A3CC66A1E01BC200025E711 /* repos-Palleas-opensource-Sample-repository-contents-Tools.response in Resources */ = {isa = PBXBuildFile; fileRef = 7A3CC63D1E01BC200025E711 /* repos-Palleas-opensource-Sample-repository-contents-Tools.response */; };
+		7A3CC66B1E01BC200025E711 /* repos-Palleas-opensource-Sample-repository-contents-Tools.response in Resources */ = {isa = PBXBuildFile; fileRef = 7A3CC63D1E01BC200025E711 /* repos-Palleas-opensource-Sample-repository-contents-Tools.response */; };
+		7A3CC66C1E01BC200025E711 /* orgs-raccommunity-repos.data in Resources */ = {isa = PBXBuildFile; fileRef = 7A3CC63E1E01BC200025E711 /* orgs-raccommunity-repos.data */; };
+		7A3CC66D1E01BC200025E711 /* orgs-raccommunity-repos.data in Resources */ = {isa = PBXBuildFile; fileRef = 7A3CC63E1E01BC200025E711 /* orgs-raccommunity-repos.data */; };
+		7A3CC66E1E01BC200025E711 /* orgs-raccommunity-repos.response in Resources */ = {isa = PBXBuildFile; fileRef = 7A3CC63F1E01BC200025E711 /* orgs-raccommunity-repos.response */; };
+		7A3CC66F1E01BC200025E711 /* orgs-raccommunity-repos.response in Resources */ = {isa = PBXBuildFile; fileRef = 7A3CC63F1E01BC200025E711 /* orgs-raccommunity-repos.response */; };
+		7A3CC6701E01BC200025E711 /* repos-Carthage-Carthage-releases-tags-0.15.data in Resources */ = {isa = PBXBuildFile; fileRef = 7A3CC6401E01BC200025E711 /* repos-Carthage-Carthage-releases-tags-0.15.data */; };
+		7A3CC6711E01BC200025E711 /* repos-Carthage-Carthage-releases-tags-0.15.data in Resources */ = {isa = PBXBuildFile; fileRef = 7A3CC6401E01BC200025E711 /* repos-Carthage-Carthage-releases-tags-0.15.data */; };
+		7A3CC6721E01BC200025E711 /* repos-Carthage-Carthage-releases-tags-0.15.response in Resources */ = {isa = PBXBuildFile; fileRef = 7A3CC6411E01BC200025E711 /* repos-Carthage-Carthage-releases-tags-0.15.response */; };
+		7A3CC6731E01BC200025E711 /* repos-Carthage-Carthage-releases-tags-0.15.response in Resources */ = {isa = PBXBuildFile; fileRef = 7A3CC6411E01BC200025E711 /* repos-Carthage-Carthage-releases-tags-0.15.response */; };
+		7A3CC6741E01BC200025E711 /* repos-Carthage-Carthage-releases.page-1-per_page-30.data in Resources */ = {isa = PBXBuildFile; fileRef = 7A3CC6421E01BC200025E711 /* repos-Carthage-Carthage-releases.page-1-per_page-30.data */; };
+		7A3CC6751E01BC200025E711 /* repos-Carthage-Carthage-releases.page-1-per_page-30.data in Resources */ = {isa = PBXBuildFile; fileRef = 7A3CC6421E01BC200025E711 /* repos-Carthage-Carthage-releases.page-1-per_page-30.data */; };
+		7A3CC6761E01BC200025E711 /* repos-Carthage-Carthage-releases.page-1-per_page-30.response in Resources */ = {isa = PBXBuildFile; fileRef = 7A3CC6431E01BC200025E711 /* repos-Carthage-Carthage-releases.page-1-per_page-30.response */; };
+		7A3CC6771E01BC200025E711 /* repos-Carthage-Carthage-releases.page-1-per_page-30.response in Resources */ = {isa = PBXBuildFile; fileRef = 7A3CC6431E01BC200025E711 /* repos-Carthage-Carthage-releases.page-1-per_page-30.response */; };
+		7A3CC6781E01BC200025E711 /* repos-Carthage-Carthage-releases.page-2-per_page-30.data in Resources */ = {isa = PBXBuildFile; fileRef = 7A3CC6441E01BC200025E711 /* repos-Carthage-Carthage-releases.page-2-per_page-30.data */; };
+		7A3CC6791E01BC200025E711 /* repos-Carthage-Carthage-releases.page-2-per_page-30.data in Resources */ = {isa = PBXBuildFile; fileRef = 7A3CC6441E01BC200025E711 /* repos-Carthage-Carthage-releases.page-2-per_page-30.data */; };
+		7A3CC67A1E01BC200025E711 /* repos-Carthage-Carthage-releases.page-2-per_page-30.response in Resources */ = {isa = PBXBuildFile; fileRef = 7A3CC6451E01BC200025E711 /* repos-Carthage-Carthage-releases.page-2-per_page-30.response */; };
+		7A3CC67B1E01BC200025E711 /* repos-Carthage-Carthage-releases.page-2-per_page-30.response in Resources */ = {isa = PBXBuildFile; fileRef = 7A3CC6451E01BC200025E711 /* repos-Carthage-Carthage-releases.page-2-per_page-30.response */; };
+		7A3CC67C1E01BC200025E711 /* repos-mdiep-MDPSplitView-releases-tags-1.0.2.data in Resources */ = {isa = PBXBuildFile; fileRef = 7A3CC6461E01BC200025E711 /* repos-mdiep-MDPSplitView-releases-tags-1.0.2.data */; };
+		7A3CC67D1E01BC200025E711 /* repos-mdiep-MDPSplitView-releases-tags-1.0.2.data in Resources */ = {isa = PBXBuildFile; fileRef = 7A3CC6461E01BC200025E711 /* repos-mdiep-MDPSplitView-releases-tags-1.0.2.data */; };
+		7A3CC67E1E01BC200025E711 /* repos-mdiep-MDPSplitView-releases-tags-1.0.2.response in Resources */ = {isa = PBXBuildFile; fileRef = 7A3CC6471E01BC200025E711 /* repos-mdiep-MDPSplitView-releases-tags-1.0.2.response */; };
+		7A3CC67F1E01BC200025E711 /* repos-mdiep-MDPSplitView-releases-tags-1.0.2.response in Resources */ = {isa = PBXBuildFile; fileRef = 7A3CC6471E01BC200025E711 /* repos-mdiep-MDPSplitView-releases-tags-1.0.2.response */; };
+		7A3CC6801E01BC200025E711 /* repos-Palleas-Opensource-Sample-repository-issues-1-comments.data in Resources */ = {isa = PBXBuildFile; fileRef = 7A3CC6481E01BC200025E711 /* repos-Palleas-Opensource-Sample-repository-issues-1-comments.data */; };
+		7A3CC6811E01BC200025E711 /* repos-Palleas-Opensource-Sample-repository-issues-1-comments.data in Resources */ = {isa = PBXBuildFile; fileRef = 7A3CC6481E01BC200025E711 /* repos-Palleas-Opensource-Sample-repository-issues-1-comments.data */; };
+		7A3CC6821E01BC200025E711 /* repos-Palleas-Opensource-Sample-repository-issues-1-comments.response in Resources */ = {isa = PBXBuildFile; fileRef = 7A3CC6491E01BC200025E711 /* repos-Palleas-Opensource-Sample-repository-issues-1-comments.response */; };
+		7A3CC6831E01BC200025E711 /* repos-Palleas-Opensource-Sample-repository-issues-1-comments.response in Resources */ = {isa = PBXBuildFile; fileRef = 7A3CC6491E01BC200025E711 /* repos-Palleas-Opensource-Sample-repository-issues-1-comments.response */; };
+		7A3CC6841E01BC200025E711 /* repos-Palleas-opensource-Sample-repository-issues.data in Resources */ = {isa = PBXBuildFile; fileRef = 7A3CC64A1E01BC200025E711 /* repos-Palleas-opensource-Sample-repository-issues.data */; };
+		7A3CC6851E01BC200025E711 /* repos-Palleas-opensource-Sample-repository-issues.data in Resources */ = {isa = PBXBuildFile; fileRef = 7A3CC64A1E01BC200025E711 /* repos-Palleas-opensource-Sample-repository-issues.data */; };
+		7A3CC6861E01BC200025E711 /* repos-Palleas-opensource-Sample-repository-issues.response in Resources */ = {isa = PBXBuildFile; fileRef = 7A3CC64B1E01BC200025E711 /* repos-Palleas-opensource-Sample-repository-issues.response */; };
+		7A3CC6871E01BC200025E711 /* repos-Palleas-opensource-Sample-repository-issues.response in Resources */ = {isa = PBXBuildFile; fileRef = 7A3CC64B1E01BC200025E711 /* repos-Palleas-opensource-Sample-repository-issues.response */; };
+		7A3CC6881E01BC200025E711 /* users-mdiep.data in Resources */ = {isa = PBXBuildFile; fileRef = 7A3CC64C1E01BC200025E711 /* users-mdiep.data */; };
+		7A3CC6891E01BC200025E711 /* users-mdiep.data in Resources */ = {isa = PBXBuildFile; fileRef = 7A3CC64C1E01BC200025E711 /* users-mdiep.data */; };
+		7A3CC68A1E01BC200025E711 /* users-mdiep.response in Resources */ = {isa = PBXBuildFile; fileRef = 7A3CC64D1E01BC200025E711 /* users-mdiep.response */; };
+		7A3CC68B1E01BC200025E711 /* users-mdiep.response in Resources */ = {isa = PBXBuildFile; fileRef = 7A3CC64D1E01BC200025E711 /* users-mdiep.response */; };
+		7A3CC68C1E01BC200025E711 /* users-Palleas-Opensource-repos.data in Resources */ = {isa = PBXBuildFile; fileRef = 7A3CC64E1E01BC200025E711 /* users-Palleas-Opensource-repos.data */; };
+		7A3CC68D1E01BC200025E711 /* users-Palleas-Opensource-repos.data in Resources */ = {isa = PBXBuildFile; fileRef = 7A3CC64E1E01BC200025E711 /* users-Palleas-Opensource-repos.data */; };
+		7A3CC68E1E01BC200025E711 /* users-Palleas-Opensource-repos.response in Resources */ = {isa = PBXBuildFile; fileRef = 7A3CC64F1E01BC200025E711 /* users-Palleas-Opensource-repos.response */; };
+		7A3CC68F1E01BC200025E711 /* users-Palleas-Opensource-repos.response in Resources */ = {isa = PBXBuildFile; fileRef = 7A3CC64F1E01BC200025E711 /* users-Palleas-Opensource-repos.response */; };
+		7A3CC6901E01BC200025E711 /* users-test.data in Resources */ = {isa = PBXBuildFile; fileRef = 7A3CC6501E01BC200025E711 /* users-test.data */; };
+		7A3CC6911E01BC200025E711 /* users-test.data in Resources */ = {isa = PBXBuildFile; fileRef = 7A3CC6501E01BC200025E711 /* users-test.data */; };
+		7A3CC6921E01BC200025E711 /* users-test.response in Resources */ = {isa = PBXBuildFile; fileRef = 7A3CC6511E01BC200025E711 /* users-test.response */; };
+		7A3CC6931E01BC200025E711 /* users-test.response in Resources */ = {isa = PBXBuildFile; fileRef = 7A3CC6511E01BC200025E711 /* users-test.response */; };
+		7A3CC6941E01BC200025E711 /* repos-Palleas-opensource-Sample-repository-contents-say.response in Resources */ = {isa = PBXBuildFile; fileRef = 7A3CC6521E01BC200025E711 /* repos-Palleas-opensource-Sample-repository-contents-say.response */; };
+		7A3CC6951E01BC200025E711 /* repos-Palleas-opensource-Sample-repository-contents-say.response in Resources */ = {isa = PBXBuildFile; fileRef = 7A3CC6521E01BC200025E711 /* repos-Palleas-opensource-Sample-repository-contents-say.response */; };
+		7A3CC6961E01BC200025E711 /* repos-Palleas-opensource-Sample-repository-contents-say.data in Resources */ = {isa = PBXBuildFile; fileRef = 7A3CC6531E01BC200025E711 /* repos-Palleas-opensource-Sample-repository-contents-say.data */; };
+		7A3CC6971E01BC200025E711 /* repos-Palleas-opensource-Sample-repository-contents-say.data in Resources */ = {isa = PBXBuildFile; fileRef = 7A3CC6531E01BC200025E711 /* repos-Palleas-opensource-Sample-repository-contents-say.data */; };
+		7A3CC6981E01BC200025E711 /* repos-mdiep-Tentacle-contents-update-test-fixtures.data in Resources */ = {isa = PBXBuildFile; fileRef = 7A3CC6541E01BC200025E711 /* repos-mdiep-Tentacle-contents-update-test-fixtures.data */; };
+		7A3CC6991E01BC200025E711 /* repos-mdiep-Tentacle-contents-update-test-fixtures.data in Resources */ = {isa = PBXBuildFile; fileRef = 7A3CC6541E01BC200025E711 /* repos-mdiep-Tentacle-contents-update-test-fixtures.data */; };
+		7A3CC69A1E01BC200025E711 /* repos-mdiep-Tentacle-contents-update-test-fixtures.response in Resources */ = {isa = PBXBuildFile; fileRef = 7A3CC6551E01BC200025E711 /* repos-mdiep-Tentacle-contents-update-test-fixtures.response */; };
+		7A3CC69B1E01BC200025E711 /* repos-mdiep-Tentacle-contents-update-test-fixtures.response in Resources */ = {isa = PBXBuildFile; fileRef = 7A3CC6551E01BC200025E711 /* repos-mdiep-Tentacle-contents-update-test-fixtures.response */; };
+		7A3CC69C1E01BC200025E711 /* repos-mdiep-MDPSplitView-releases-assets-433845.data in Resources */ = {isa = PBXBuildFile; fileRef = 7A3CC6561E01BC200025E711 /* repos-mdiep-MDPSplitView-releases-assets-433845.data */; };
+		7A3CC69D1E01BC200025E711 /* repos-mdiep-MDPSplitView-releases-assets-433845.data in Resources */ = {isa = PBXBuildFile; fileRef = 7A3CC6561E01BC200025E711 /* repos-mdiep-MDPSplitView-releases-assets-433845.data */; };
+		7A3CC69E1E01BC200025E711 /* repos-mdiep-MDPSplitView-releases-assets-433845.response in Resources */ = {isa = PBXBuildFile; fileRef = 7A3CC6571E01BC200025E711 /* repos-mdiep-MDPSplitView-releases-assets-433845.response */; };
+		7A3CC69F1E01BC200025E711 /* repos-mdiep-MDPSplitView-releases-assets-433845.response in Resources */ = {isa = PBXBuildFile; fileRef = 7A3CC6571E01BC200025E711 /* repos-mdiep-MDPSplitView-releases-assets-433845.response */; };
+		7A3CC6A01E01BC200025E711 /* repos-mdiep-NonExistent-releases-tags-tag.data in Resources */ = {isa = PBXBuildFile; fileRef = 7A3CC6581E01BC200025E711 /* repos-mdiep-NonExistent-releases-tags-tag.data */; };
+		7A3CC6A11E01BC200025E711 /* repos-mdiep-NonExistent-releases-tags-tag.data in Resources */ = {isa = PBXBuildFile; fileRef = 7A3CC6581E01BC200025E711 /* repos-mdiep-NonExistent-releases-tags-tag.data */; };
+		7A3CC6A21E01BC200025E711 /* repos-mdiep-NonExistent-releases-tags-tag.response in Resources */ = {isa = PBXBuildFile; fileRef = 7A3CC6591E01BC200025E711 /* repos-mdiep-NonExistent-releases-tags-tag.response */; };
+		7A3CC6A31E01BC200025E711 /* repos-mdiep-NonExistent-releases-tags-tag.response in Resources */ = {isa = PBXBuildFile; fileRef = 7A3CC6591E01BC200025E711 /* repos-mdiep-NonExistent-releases-tags-tag.response */; };
+		7A3CC6A41E01BC200025E711 /* repos-torvalds-linux-releases-tags-v4.4.data in Resources */ = {isa = PBXBuildFile; fileRef = 7A3CC65A1E01BC200025E711 /* repos-torvalds-linux-releases-tags-v4.4.data */; };
+		7A3CC6A51E01BC200025E711 /* repos-torvalds-linux-releases-tags-v4.4.data in Resources */ = {isa = PBXBuildFile; fileRef = 7A3CC65A1E01BC200025E711 /* repos-torvalds-linux-releases-tags-v4.4.data */; };
+		7A3CC6A61E01BC200025E711 /* repos-torvalds-linux-releases-tags-v4.4.response in Resources */ = {isa = PBXBuildFile; fileRef = 7A3CC65B1E01BC200025E711 /* repos-torvalds-linux-releases-tags-v4.4.response */; };
+		7A3CC6A71E01BC200025E711 /* repos-torvalds-linux-releases-tags-v4.4.response in Resources */ = {isa = PBXBuildFile; fileRef = 7A3CC65B1E01BC200025E711 /* repos-torvalds-linux-releases-tags-v4.4.response */; };
+		7A6F94C11DECF5FA006E9BAD /* Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6F94C01DECF5FA006E9BAD /* Content.swift */; };
+		7A6F94C21DECF93E006E9BAD /* Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6F94C01DECF5FA006E9BAD /* Content.swift */; };
+		7A8A9D621E5546AC0009DA9E /* Branch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8A9D611E5546AC0009DA9E /* Branch.swift */; };
+		7A8A9D631E5547C70009DA9E /* Branch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8A9D611E5546AC0009DA9E /* Branch.swift */; };
+		7A8A9D651E5547F50009DA9E /* BranchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8A9D641E5547F50009DA9E /* BranchTests.swift */; };
+		7A8A9D661E5547F50009DA9E /* BranchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8A9D641E5547F50009DA9E /* BranchTests.swift */; };
+		7A8A9D691E5548070009DA9E /* repos-Carthage-ReactiveTask-branches.data in Resources */ = {isa = PBXBuildFile; fileRef = 7A8A9D671E5548070009DA9E /* repos-Carthage-ReactiveTask-branches.data */; };
+		7A8A9D6A1E5548070009DA9E /* repos-Carthage-ReactiveTask-branches.data in Resources */ = {isa = PBXBuildFile; fileRef = 7A8A9D671E5548070009DA9E /* repos-Carthage-ReactiveTask-branches.data */; };
+		7A8A9D6B1E5548070009DA9E /* repos-Carthage-ReactiveTask-branches.response in Resources */ = {isa = PBXBuildFile; fileRef = 7A8A9D681E5548070009DA9E /* repos-Carthage-ReactiveTask-branches.response */; };
+		7A8A9D6C1E5548070009DA9E /* repos-Carthage-ReactiveTask-branches.response in Resources */ = {isa = PBXBuildFile; fileRef = 7A8A9D681E5548070009DA9E /* repos-Carthage-ReactiveTask-branches.response */; };
+		7AAB00FD1CF51FC5005A7319 /* IssuesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAB00FC1CF51FC5005A7319 /* IssuesTests.swift */; };
+		7ABFB4D71D51519B0067B500 /* RepositoryInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABFB4D61D51519B0067B500 /* RepositoryInfo.swift */; };
+		7ABFB4D81D51519B0067B500 /* RepositoryInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABFB4D61D51519B0067B500 /* RepositoryInfo.swift */; };
+		7ABFB4DD1D5159F50067B500 /* RepositoryInfoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABFB4DC1D5159F50067B500 /* RepositoryInfoTests.swift */; };
+		7ABFB4DE1D515A350067B500 /* RepositoryInfoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABFB4DC1D5159F50067B500 /* RepositoryInfoTests.swift */; };
+		927847F71E0B28CF003B9EE6 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927847F61E0B28CF003B9EE6 /* File.swift */; };
+		927847F81E0B28FB003B9EE6 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927847F61E0B28CF003B9EE6 /* File.swift */; };
+		927847FA1E0C74B2003B9EE6 /* Commit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927847F91E0C74B2003B9EE6 /* Commit.swift */; };
+		927847FB1E0C75B1003B9EE6 /* Commit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927847F91E0C74B2003B9EE6 /* Commit.swift */; };
+		927847FD1E0C78A4003B9EE6 /* Author.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927847FC1E0C78A4003B9EE6 /* Author.swift */; };
+		927847FE1E0C78BA003B9EE6 /* Author.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927847FC1E0C78A4003B9EE6 /* Author.swift */; };
+		927848001E0C78DB003B9EE6 /* FileResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927847FF1E0C78DB003B9EE6 /* FileResponse.swift */; };
+		927848011E0C78EA003B9EE6 /* FileResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927847FF1E0C78DB003B9EE6 /* FileResponse.swift */; };
+		928DF21F1E0E693000E6DE35 /* create-file-sample-response.data in Resources */ = {isa = PBXBuildFile; fileRef = 928DF21D1E0E692600E6DE35 /* create-file-sample-response.data */; };
+		928DF2201E0E693100E6DE35 /* create-file-sample-response.data in Resources */ = {isa = PBXBuildFile; fileRef = 928DF21D1E0E692600E6DE35 /* create-file-sample-response.data */; };
+		928DF2271E0E6A1200E6DE35 /* Argo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 928DF2211E0E6A1200E6DE35 /* Argo.framework */; };
+		928DF2281E0E6A1200E6DE35 /* Curry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 928DF2221E0E6A1200E6DE35 /* Curry.framework */; };
+		928DF22A1E0E6A1200E6DE35 /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 928DF2241E0E6A1200E6DE35 /* ReactiveSwift.framework */; };
+		928DF22B1E0E6A1200E6DE35 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 928DF2251E0E6A1200E6DE35 /* Result.framework */; };
+		928DF22C1E0E6A1200E6DE35 /* Runes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 928DF2261E0E6A1200E6DE35 /* Runes.framework */; };
+		928DF22D1E0E6A8000E6DE35 /* FileResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928DF21B1E0E68D300E6DE35 /* FileResponseTests.swift */; };
+		928DF22E1E0E6A8100E6DE35 /* FileResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928DF21B1E0E68D300E6DE35 /* FileResponseTests.swift */; };
+		928DF2351E0E95B600E6DE35 /* Argo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 928DF22F1E0E95B600E6DE35 /* Argo.framework */; };
+		928DF2361E0E95B600E6DE35 /* Curry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 928DF2301E0E95B600E6DE35 /* Curry.framework */; };
+		928DF2381E0E95B600E6DE35 /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 928DF2321E0E95B600E6DE35 /* ReactiveSwift.framework */; };
+		928DF2391E0E95B600E6DE35 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 928DF2331E0E95B600E6DE35 /* Result.framework */; };
+		928DF23A1E0E95B600E6DE35 /* Runes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 928DF2341E0E95B600E6DE35 /* Runes.framework */; };
+		928DF23E1E1117D600E6DE35 /* Sha.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928DF23D1E1117D600E6DE35 /* Sha.swift */; };
+		928DF23F1E11187C00E6DE35 /* Sha.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928DF23D1E1117D600E6DE35 /* Sha.swift */; };
+		92F0C2BA1E391088004A9889 /* FileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F0C2B91E391088004A9889 /* FileTests.swift */; };
+		92F0C2BB1E39108B004A9889 /* FileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F0C2B91E391088004A9889 /* FileTests.swift */; };
+		92F0C2BD1E391F3F004A9889 /* ArgoExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F0C2BC1E391F3F004A9889 /* ArgoExtensionsTests.swift */; };
+		92F0C2BE1E391F3F004A9889 /* ArgoExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F0C2BC1E391F3F004A9889 /* ArgoExtensionsTests.swift */; };
+		BE0F40A01C89098E00E3B11A /* Fixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0F409F1C89098E00E3B11A /* Fixture.swift */; };
+		BE0F40A21C8909EB00E3B11A /* ReleaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0F40A11C8909EB00E3B11A /* ReleaseTests.swift */; };
+		BE0F40A41C89135D00E3B11A /* Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0F40A31C89135D00E3B11A /* Decodable.swift */; };
+		BE0F40A51C89191600E3B11A /* Fixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0F409F1C89098E00E3B11A /* Fixture.swift */; };
+		BE0F40B11C8BA97400E3B11A /* Tentacle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE88E7F21C88C6B30034A112 /* Tentacle.framework */; };
+		BE1E036B1C9AD87F001296C2 /* ResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1E036A1C9AD87F001296C2 /* ResponseTests.swift */; };
+		BE1E036C1C9AD87F001296C2 /* ResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1E036A1C9AD87F001296C2 /* ResponseTests.swift */; };
+		BE2B6A6C1C8B854F0080BFEB /* ClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2B6A6B1C8B854F0080BFEB /* ClientTests.swift */; };
+		BE2B6A6D1C8B854F0080BFEB /* ClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2B6A6B1C8B854F0080BFEB /* ClientTests.swift */; };
+		BE88E7F61C88C6B30034A112 /* Tentacle.h in Headers */ = {isa = PBXBuildFile; fileRef = BE88E7F51C88C6B30034A112 /* Tentacle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE88E7FD1C88C6B30034A112 /* Tentacle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE88E7F21C88C6B30034A112 /* Tentacle.framework */; };
+		BE88E80D1C88C72B0034A112 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE88E80C1C88C72B0034A112 /* Client.swift */; };
+		BE88E82D1C88C94D0034A112 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE88E82C1C88C94D0034A112 /* Server.swift */; };
+		BE88E8301C88CDAB0034A112 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE88E82F1C88CDAB0034A112 /* Repository.swift */; };
+		BE88E8321C88D33D0034A112 /* Release.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE88E8311C88D33D0034A112 /* Release.swift */; };
+		BE88E8751C88F0C50034A112 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE88E8741C88F0C50034A112 /* main.swift */; };
+		BEA86F9A1C9F7C230049360B /* ServerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA86F991C9F7C230049360B /* ServerTests.swift */; };
+		BEA86F9B1C9F7C230049360B /* ServerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA86F991C9F7C230049360B /* ServerTests.swift */; };
+		BEA86F9D1C9F7E1E0049360B /* RepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA86F9C1C9F7E1E0049360B /* RepositoryTests.swift */; };
+		BEA86F9E1C9F7E1E0049360B /* RepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA86F9C1C9F7E1E0049360B /* RepositoryTests.swift */; };
+		BEB0765D1C8A001C00ABD373 /* GitHubError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB0765C1C8A001C00ABD373 /* GitHubError.swift */; };
+		BEB076601C8A019E00ABD373 /* GitHubErrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB0765E1C8A019A00ABD373 /* GitHubErrorTests.swift */; };
+		BECB8A8B1CBDCD17005D70A6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECB8A8A1CBDCD17005D70A6 /* User.swift */; };
+		BECB8A8E1CBDD919005D70A6 /* FoundationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECB8A8D1CBDD919005D70A6 /* FoundationExtensions.swift */; };
+		BECB8A8F1CBDD91D005D70A6 /* FoundationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECB8A8D1CBDD919005D70A6 /* FoundationExtensions.swift */; };
+		BECB8A901CBDD920005D70A6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECB8A8A1CBDCD17005D70A6 /* User.swift */; };
+		BECB8AA31CBDDF0F005D70A6 /* UserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECB8AA11CBDDF0F005D70A6 /* UserTests.swift */; };
+		BECB8AA41CBDDF0F005D70A6 /* UserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECB8AA11CBDDF0F005D70A6 /* UserTests.swift */; };
+		BEEE47421C91B8DF000FFC21 /* ResourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEE47411C91B8DF000FFC21 /* ResourceType.swift */; };
+		BEEE47431C91B8DF000FFC21 /* ResourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEE47411C91B8DF000FFC21 /* ResourceType.swift */; };
+		BEEE47451C91BB3A000FFC21 /* ArgoExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEE47441C91BB3A000FFC21 /* ArgoExtensions.swift */; };
+		BEEE47461C91BB3A000FFC21 /* ArgoExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEE47441C91BB3A000FFC21 /* ArgoExtensions.swift */; };
+		BEEE474E1C92623E000FFC21 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEE474D1C92623E000FFC21 /* Response.swift */; };
+		BEEE474F1C92623E000FFC21 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEE474D1C92623E000FFC21 /* Response.swift */; };
+		CD1FE64F1DCF36070016639E /* HTTPStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1FE64D1DCF35F60016639E /* HTTPStub.swift */; };
+		CD1FE6501DCF36070016639E /* HTTPStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1FE64D1DCF35F60016639E /* HTTPStub.swift */; };
+		CD83C7BA1DCE379D00BC2608 /* Availability.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD83C7B91DCE379D00BC2608 /* Availability.swift */; };
+		CD83C7BB1DCE379D00BC2608 /* Availability.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD83C7B91DCE379D00BC2608 /* Availability.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		619081831C8A2D2B001BE2F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE88E7E91C88C6B30034A112 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 61377C6B1C8A2B2C0081FF24;
+			remoteInfo = TentacleiOS;
+		};
+		BE88E7FE1C88C6B30034A112 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE88E7E91C88C6B30034A112 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE88E7F11C88C6B30034A112;
+			remoteInfo = Tentacle;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		61377C6C1C8A2B2C0081FF24 /* Tentacle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Tentacle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6190817D1C8A2D2B001BE2F8 /* Tentacle-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tentacle-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A072D8D1DED11C900CFE58F /* ContentTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentTests.swift; sourceTree = "<group>"; };
+		7A1A82551CF3DBAC0076E2DD /* Issue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Issue.swift; sourceTree = "<group>"; };
+		7A1A82571CF3DE4C0076E2DD /* Label.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
+		7A1A82591CF3DEEA0076E2DD /* Milestone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Milestone.swift; sourceTree = "<group>"; };
+		7A1A825D1CF3E5B60076E2DD /* PullRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PullRequest.swift; sourceTree = "<group>"; };
+		7A1F20EC1D3E85BB00F275F8 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		7A1F20EF1D3E86D900F275F8 /* ColorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorTests.swift; sourceTree = "<group>"; };
+		7A22EDBB1E47CB8900524539 /* EndpointTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndpointTests.swift; sourceTree = "<group>"; };
+		7A2788791D4920DA007AC936 /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		7A27887B1D49223B007AC936 /* CommentsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentsTests.swift; sourceTree = "<group>"; };
+		7A3CC6361E01BC200025E711 /* repos-mdiep-Tentacle-contents-Carthage-Checkouts-ReactiveSwift.data */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "repos-mdiep-Tentacle-contents-Carthage-Checkouts-ReactiveSwift.data"; sourceTree = "<group>"; };
+		7A3CC6371E01BC200025E711 /* repos-mdiep-Tentacle-contents-Carthage-Checkouts-ReactiveSwift.response */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "repos-mdiep-Tentacle-contents-Carthage-Checkouts-ReactiveSwift.response"; sourceTree = "<group>"; };
+		7A3CC6381E01BC200025E711 /* repos-Palleas-opensource-Sample-repository-contents-README.md.data */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "repos-Palleas-opensource-Sample-repository-contents-README.md.data"; sourceTree = "<group>"; };
+		7A3CC6391E01BC200025E711 /* repos-Palleas-opensource-Sample-repository-contents-README.md.response */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "repos-Palleas-opensource-Sample-repository-contents-README.md.response"; sourceTree = "<group>"; };
+		7A3CC63A1E01BC200025E711 /* repos-Palleas-opensource-Sample-repository-contents-Tools-say.data */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "repos-Palleas-opensource-Sample-repository-contents-Tools-say.data"; sourceTree = "<group>"; };
+		7A3CC63B1E01BC200025E711 /* repos-Palleas-opensource-Sample-repository-contents-Tools-say.response */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "repos-Palleas-opensource-Sample-repository-contents-Tools-say.response"; sourceTree = "<group>"; };
+		7A3CC63C1E01BC200025E711 /* repos-Palleas-opensource-Sample-repository-contents-Tools.data */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "repos-Palleas-opensource-Sample-repository-contents-Tools.data"; sourceTree = "<group>"; };
+		7A3CC63D1E01BC200025E711 /* repos-Palleas-opensource-Sample-repository-contents-Tools.response */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "repos-Palleas-opensource-Sample-repository-contents-Tools.response"; sourceTree = "<group>"; };
+		7A3CC63E1E01BC200025E711 /* orgs-raccommunity-repos.data */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "orgs-raccommunity-repos.data"; sourceTree = "<group>"; };
+		7A3CC63F1E01BC200025E711 /* orgs-raccommunity-repos.response */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "orgs-raccommunity-repos.response"; sourceTree = "<group>"; };
+		7A3CC6401E01BC200025E711 /* repos-Carthage-Carthage-releases-tags-0.15.data */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "repos-Carthage-Carthage-releases-tags-0.15.data"; sourceTree = "<group>"; };
+		7A3CC6411E01BC200025E711 /* repos-Carthage-Carthage-releases-tags-0.15.response */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "repos-Carthage-Carthage-releases-tags-0.15.response"; sourceTree = "<group>"; };
+		7A3CC6421E01BC200025E711 /* repos-Carthage-Carthage-releases.page-1-per_page-30.data */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "repos-Carthage-Carthage-releases.page-1-per_page-30.data"; sourceTree = "<group>"; };
+		7A3CC6431E01BC200025E711 /* repos-Carthage-Carthage-releases.page-1-per_page-30.response */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "repos-Carthage-Carthage-releases.page-1-per_page-30.response"; sourceTree = "<group>"; };
+		7A3CC6441E01BC200025E711 /* repos-Carthage-Carthage-releases.page-2-per_page-30.data */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "repos-Carthage-Carthage-releases.page-2-per_page-30.data"; sourceTree = "<group>"; };
+		7A3CC6451E01BC200025E711 /* repos-Carthage-Carthage-releases.page-2-per_page-30.response */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "repos-Carthage-Carthage-releases.page-2-per_page-30.response"; sourceTree = "<group>"; };
+		7A3CC6461E01BC200025E711 /* repos-mdiep-MDPSplitView-releases-tags-1.0.2.data */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "repos-mdiep-MDPSplitView-releases-tags-1.0.2.data"; sourceTree = "<group>"; };
+		7A3CC6471E01BC200025E711 /* repos-mdiep-MDPSplitView-releases-tags-1.0.2.response */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "repos-mdiep-MDPSplitView-releases-tags-1.0.2.response"; sourceTree = "<group>"; };
+		7A3CC6481E01BC200025E711 /* repos-Palleas-Opensource-Sample-repository-issues-1-comments.data */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "repos-Palleas-Opensource-Sample-repository-issues-1-comments.data"; sourceTree = "<group>"; };
+		7A3CC6491E01BC200025E711 /* repos-Palleas-Opensource-Sample-repository-issues-1-comments.response */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "repos-Palleas-Opensource-Sample-repository-issues-1-comments.response"; sourceTree = "<group>"; };
+		7A3CC64A1E01BC200025E711 /* repos-Palleas-opensource-Sample-repository-issues.data */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "repos-Palleas-opensource-Sample-repository-issues.data"; sourceTree = "<group>"; };
+		7A3CC64B1E01BC200025E711 /* repos-Palleas-opensource-Sample-repository-issues.response */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "repos-Palleas-opensource-Sample-repository-issues.response"; sourceTree = "<group>"; };
+		7A3CC64C1E01BC200025E711 /* users-mdiep.data */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "users-mdiep.data"; sourceTree = "<group>"; };
+		7A3CC64D1E01BC200025E711 /* users-mdiep.response */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "users-mdiep.response"; sourceTree = "<group>"; };
+		7A3CC64E1E01BC200025E711 /* users-Palleas-Opensource-repos.data */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "users-Palleas-Opensource-repos.data"; sourceTree = "<group>"; };
+		7A3CC64F1E01BC200025E711 /* users-Palleas-Opensource-repos.response */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "users-Palleas-Opensource-repos.response"; sourceTree = "<group>"; };
+		7A3CC6501E01BC200025E711 /* users-test.data */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "users-test.data"; sourceTree = "<group>"; };
+		7A3CC6511E01BC200025E711 /* users-test.response */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "users-test.response"; sourceTree = "<group>"; };
+		7A3CC6521E01BC200025E711 /* repos-Palleas-opensource-Sample-repository-contents-say.response */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "repos-Palleas-opensource-Sample-repository-contents-say.response"; sourceTree = "<group>"; };
+		7A3CC6531E01BC200025E711 /* repos-Palleas-opensource-Sample-repository-contents-say.data */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "repos-Palleas-opensource-Sample-repository-contents-say.data"; sourceTree = "<group>"; };
+		7A3CC6541E01BC200025E711 /* repos-mdiep-Tentacle-contents-update-test-fixtures.data */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "repos-mdiep-Tentacle-contents-update-test-fixtures.data"; sourceTree = "<group>"; };
+		7A3CC6551E01BC200025E711 /* repos-mdiep-Tentacle-contents-update-test-fixtures.response */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "repos-mdiep-Tentacle-contents-update-test-fixtures.response"; sourceTree = "<group>"; };
+		7A3CC6561E01BC200025E711 /* repos-mdiep-MDPSplitView-releases-assets-433845.data */ = {isa = PBXFileReference; lastKnownFileType = file; path = "repos-mdiep-MDPSplitView-releases-assets-433845.data"; sourceTree = "<group>"; };
+		7A3CC6571E01BC200025E711 /* repos-mdiep-MDPSplitView-releases-assets-433845.response */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "repos-mdiep-MDPSplitView-releases-assets-433845.response"; sourceTree = "<group>"; };
+		7A3CC6581E01BC200025E711 /* repos-mdiep-NonExistent-releases-tags-tag.data */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "repos-mdiep-NonExistent-releases-tags-tag.data"; sourceTree = "<group>"; };
+		7A3CC6591E01BC200025E711 /* repos-mdiep-NonExistent-releases-tags-tag.response */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "repos-mdiep-NonExistent-releases-tags-tag.response"; sourceTree = "<group>"; };
+		7A3CC65A1E01BC200025E711 /* repos-torvalds-linux-releases-tags-v4.4.data */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "repos-torvalds-linux-releases-tags-v4.4.data"; sourceTree = "<group>"; };
+		7A3CC65B1E01BC200025E711 /* repos-torvalds-linux-releases-tags-v4.4.response */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "repos-torvalds-linux-releases-tags-v4.4.response"; sourceTree = "<group>"; };
+		7A6F94C01DECF5FA006E9BAD /* Content.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Content.swift; sourceTree = "<group>"; };
+		7A8A9D611E5546AC0009DA9E /* Branch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Branch.swift; sourceTree = "<group>"; };
+		7A8A9D641E5547F50009DA9E /* BranchTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BranchTests.swift; sourceTree = "<group>"; };
+		7A8A9D671E5548070009DA9E /* repos-Carthage-ReactiveTask-branches.data */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "repos-Carthage-ReactiveTask-branches.data"; sourceTree = "<group>"; };
+		7A8A9D681E5548070009DA9E /* repos-Carthage-ReactiveTask-branches.response */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "repos-Carthage-ReactiveTask-branches.response"; sourceTree = "<group>"; };
+		7AAB00FC1CF51FC5005A7319 /* IssuesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IssuesTests.swift; sourceTree = "<group>"; };
+		7ABFB4D61D51519B0067B500 /* RepositoryInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryInfo.swift; sourceTree = "<group>"; };
+		7ABFB4DC1D5159F50067B500 /* RepositoryInfoTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryInfoTests.swift; sourceTree = "<group>"; };
+		927847F61E0B28CF003B9EE6 /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		927847F91E0C74B2003B9EE6 /* Commit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Commit.swift; sourceTree = "<group>"; };
+		927847FC1E0C78A4003B9EE6 /* Author.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Author.swift; sourceTree = "<group>"; };
+		927847FF1E0C78DB003B9EE6 /* FileResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileResponse.swift; sourceTree = "<group>"; };
+		928DF21B1E0E68D300E6DE35 /* FileResponseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileResponseTests.swift; sourceTree = "<group>"; };
+		928DF21D1E0E692600E6DE35 /* create-file-sample-response.data */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "create-file-sample-response.data"; sourceTree = "<group>"; };
+		928DF2211E0E6A1200E6DE35 /* Argo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Argo.framework; path = "../../../Library/Developer/Xcode/DerivedData/Tentacle-bqioixzqvwloakfnodqjigugjqbv/Build/Products/Debug-iphonesimulator/Argo.framework"; sourceTree = "<group>"; };
+		928DF2221E0E6A1200E6DE35 /* Curry.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Curry.framework; path = "../../../Library/Developer/Xcode/DerivedData/Tentacle-bqioixzqvwloakfnodqjigugjqbv/Build/Products/Debug-iphonesimulator/Curry.framework"; sourceTree = "<group>"; };
+		928DF2231E0E6A1200E6DE35 /* Ogra.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Ogra.framework; path = "Carthage/Checkouts/Ogra/build/Debug-iphoneos/Ogra.framework"; sourceTree = SOURCE_ROOT; };
+		928DF2241E0E6A1200E6DE35 /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveSwift.framework; path = "../../../Library/Developer/Xcode/DerivedData/Tentacle-bqioixzqvwloakfnodqjigugjqbv/Build/Products/Debug-iphonesimulator/ReactiveSwift.framework"; sourceTree = "<group>"; };
+		928DF2251E0E6A1200E6DE35 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = "../../../Library/Developer/Xcode/DerivedData/Tentacle-bqioixzqvwloakfnodqjigugjqbv/Build/Products/Debug-iphonesimulator/Result.framework"; sourceTree = "<group>"; };
+		928DF2261E0E6A1200E6DE35 /* Runes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Runes.framework; path = "../../../Library/Developer/Xcode/DerivedData/Tentacle-bqioixzqvwloakfnodqjigugjqbv/Build/Products/Debug-iphonesimulator/Runes.framework"; sourceTree = "<group>"; };
+		928DF22F1E0E95B600E6DE35 /* Argo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Argo.framework; path = Carthage/Checkouts/Argo/build/Debug/Argo.framework; sourceTree = SOURCE_ROOT; };
+		928DF2301E0E95B600E6DE35 /* Curry.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Curry.framework; path = "../../../Library/Developer/Xcode/DerivedData/Tentacle-bqioixzqvwloakfnodqjigugjqbv/Build/Products/Debug/Curry.framework"; sourceTree = "<group>"; };
+		928DF2321E0E95B600E6DE35 /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveSwift.framework; path = Carthage/Checkouts/ReactiveSwift/build/Debug/ReactiveSwift.framework; sourceTree = SOURCE_ROOT; };
+		928DF2331E0E95B600E6DE35 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = "../../../Library/Developer/Xcode/DerivedData/Tentacle-bqioixzqvwloakfnodqjigugjqbv/Build/Products/Debug/Result.framework"; sourceTree = "<group>"; };
+		928DF2341E0E95B600E6DE35 /* Runes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Runes.framework; path = "../../../Library/Developer/Xcode/DerivedData/Tentacle-bqioixzqvwloakfnodqjigugjqbv/Build/Products/Debug/Runes.framework"; sourceTree = "<group>"; };
+		928DF23D1E1117D600E6DE35 /* Sha.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sha.swift; sourceTree = "<group>"; };
+		92F0C2B91E391088004A9889 /* FileTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileTests.swift; sourceTree = "<group>"; };
+		92F0C2BC1E391F3F004A9889 /* ArgoExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArgoExtensionsTests.swift; sourceTree = "<group>"; };
+		BE0F409F1C89098E00E3B11A /* Fixture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Fixture.swift; path = Tests/TentacleTests/Fixture.swift; sourceTree = SOURCE_ROOT; };
+		BE0F40A11C8909EB00E3B11A /* ReleaseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReleaseTests.swift; sourceTree = "<group>"; };
+		BE0F40A31C89135D00E3B11A /* Decodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Decodable.swift; sourceTree = "<group>"; };
+		BE1E036A1C9AD87F001296C2 /* ResponseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseTests.swift; sourceTree = "<group>"; };
+		BE2B6A6B1C8B854F0080BFEB /* ClientTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientTests.swift; sourceTree = "<group>"; };
+		BE88E7F21C88C6B30034A112 /* Tentacle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Tentacle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE88E7F51C88C6B30034A112 /* Tentacle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tentacle.h; sourceTree = "<group>"; };
+		BE88E7F71C88C6B30034A112 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE88E7FC1C88C6B30034A112 /* Tentacle-OSXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tentacle-OSXTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE88E8031C88C6B30034A112 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE88E80C1C88C72B0034A112 /* Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		BE88E82C1C88C94D0034A112 /* Server.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
+		BE88E82F1C88CDAB0034A112 /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		BE88E8311C88D33D0034A112 /* Release.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Release.swift; sourceTree = "<group>"; };
+		BE88E8671C88F0990034A112 /* update-test-fixtures.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "update-test-fixtures.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE88E8701C88F0990034A112 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE88E8741C88F0C50034A112 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		BEA86F991C9F7C230049360B /* ServerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerTests.swift; sourceTree = "<group>"; };
+		BEA86F9C1C9F7E1E0049360B /* RepositoryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryTests.swift; sourceTree = "<group>"; };
+		BEB0765C1C8A001C00ABD373 /* GitHubError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHubError.swift; sourceTree = "<group>"; };
+		BEB0765E1C8A019A00ABD373 /* GitHubErrorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHubErrorTests.swift; sourceTree = "<group>"; };
+		BECB8A8A1CBDCD17005D70A6 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		BECB8A8D1CBDD919005D70A6 /* FoundationExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoundationExtensions.swift; sourceTree = "<group>"; };
+		BECB8AA11CBDDF0F005D70A6 /* UserTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTests.swift; sourceTree = "<group>"; };
+		BEEE47411C91B8DF000FFC21 /* ResourceType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceType.swift; sourceTree = "<group>"; };
+		BEEE47441C91BB3A000FFC21 /* ArgoExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArgoExtensions.swift; sourceTree = "<group>"; };
+		BEEE474D1C92623E000FFC21 /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		CD1FE64D1DCF35F60016639E /* HTTPStub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPStub.swift; sourceTree = "<group>"; };
+		CD83C7B91DCE379D00BC2608 /* Availability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Availability.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		61377C681C8A2B2C0081FF24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				928DF2271E0E6A1200E6DE35 /* Argo.framework in Frameworks */,
+				928DF2281E0E6A1200E6DE35 /* Curry.framework in Frameworks */,
+				928DF22A1E0E6A1200E6DE35 /* ReactiveSwift.framework in Frameworks */,
+				928DF22B1E0E6A1200E6DE35 /* Result.framework in Frameworks */,
+				928DF22C1E0E6A1200E6DE35 /* Runes.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6190817A1C8A2D2B001BE2F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				619081821C8A2D2B001BE2F8 /* Tentacle.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE88E7EE1C88C6B30034A112 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				928DF2351E0E95B600E6DE35 /* Argo.framework in Frameworks */,
+				928DF2361E0E95B600E6DE35 /* Curry.framework in Frameworks */,
+				928DF2381E0E95B600E6DE35 /* ReactiveSwift.framework in Frameworks */,
+				928DF2391E0E95B600E6DE35 /* Result.framework in Frameworks */,
+				928DF23A1E0E95B600E6DE35 /* Runes.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE88E7F91C88C6B30034A112 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE88E7FD1C88C6B30034A112 /* Tentacle.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE88E8641C88F0990034A112 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE0F40B11C8BA97400E3B11A /* Tentacle.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BE0F40961C8908CB00E3B11A /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				7A8A9D671E5548070009DA9E /* repos-Carthage-ReactiveTask-branches.data */,
+				7A8A9D681E5548070009DA9E /* repos-Carthage-ReactiveTask-branches.response */,
+				928DF21D1E0E692600E6DE35 /* create-file-sample-response.data */,
+				7A3CC6361E01BC200025E711 /* repos-mdiep-Tentacle-contents-Carthage-Checkouts-ReactiveSwift.data */,
+				7A3CC6371E01BC200025E711 /* repos-mdiep-Tentacle-contents-Carthage-Checkouts-ReactiveSwift.response */,
+				7A3CC6381E01BC200025E711 /* repos-Palleas-opensource-Sample-repository-contents-README.md.data */,
+				7A3CC6391E01BC200025E711 /* repos-Palleas-opensource-Sample-repository-contents-README.md.response */,
+				7A3CC63A1E01BC200025E711 /* repos-Palleas-opensource-Sample-repository-contents-Tools-say.data */,
+				7A3CC63B1E01BC200025E711 /* repos-Palleas-opensource-Sample-repository-contents-Tools-say.response */,
+				7A3CC63C1E01BC200025E711 /* repos-Palleas-opensource-Sample-repository-contents-Tools.data */,
+				7A3CC63D1E01BC200025E711 /* repos-Palleas-opensource-Sample-repository-contents-Tools.response */,
+				7A3CC63E1E01BC200025E711 /* orgs-raccommunity-repos.data */,
+				7A3CC63F1E01BC200025E711 /* orgs-raccommunity-repos.response */,
+				7A3CC6401E01BC200025E711 /* repos-Carthage-Carthage-releases-tags-0.15.data */,
+				7A3CC6411E01BC200025E711 /* repos-Carthage-Carthage-releases-tags-0.15.response */,
+				7A3CC6421E01BC200025E711 /* repos-Carthage-Carthage-releases.page-1-per_page-30.data */,
+				7A3CC6431E01BC200025E711 /* repos-Carthage-Carthage-releases.page-1-per_page-30.response */,
+				7A3CC6441E01BC200025E711 /* repos-Carthage-Carthage-releases.page-2-per_page-30.data */,
+				7A3CC6451E01BC200025E711 /* repos-Carthage-Carthage-releases.page-2-per_page-30.response */,
+				7A3CC6461E01BC200025E711 /* repos-mdiep-MDPSplitView-releases-tags-1.0.2.data */,
+				7A3CC6471E01BC200025E711 /* repos-mdiep-MDPSplitView-releases-tags-1.0.2.response */,
+				7A3CC6481E01BC200025E711 /* repos-Palleas-Opensource-Sample-repository-issues-1-comments.data */,
+				7A3CC6491E01BC200025E711 /* repos-Palleas-Opensource-Sample-repository-issues-1-comments.response */,
+				7A3CC64A1E01BC200025E711 /* repos-Palleas-opensource-Sample-repository-issues.data */,
+				7A3CC64B1E01BC200025E711 /* repos-Palleas-opensource-Sample-repository-issues.response */,
+				7A3CC64C1E01BC200025E711 /* users-mdiep.data */,
+				7A3CC64D1E01BC200025E711 /* users-mdiep.response */,
+				7A3CC64E1E01BC200025E711 /* users-Palleas-Opensource-repos.data */,
+				7A3CC64F1E01BC200025E711 /* users-Palleas-Opensource-repos.response */,
+				7A3CC6501E01BC200025E711 /* users-test.data */,
+				7A3CC6511E01BC200025E711 /* users-test.response */,
+				7A3CC6521E01BC200025E711 /* repos-Palleas-opensource-Sample-repository-contents-say.response */,
+				7A3CC6531E01BC200025E711 /* repos-Palleas-opensource-Sample-repository-contents-say.data */,
+				7A3CC6541E01BC200025E711 /* repos-mdiep-Tentacle-contents-update-test-fixtures.data */,
+				7A3CC6551E01BC200025E711 /* repos-mdiep-Tentacle-contents-update-test-fixtures.response */,
+				7A3CC6561E01BC200025E711 /* repos-mdiep-MDPSplitView-releases-assets-433845.data */,
+				7A3CC6571E01BC200025E711 /* repos-mdiep-MDPSplitView-releases-assets-433845.response */,
+				7A3CC6581E01BC200025E711 /* repos-mdiep-NonExistent-releases-tags-tag.data */,
+				7A3CC6591E01BC200025E711 /* repos-mdiep-NonExistent-releases-tags-tag.response */,
+				7A3CC65A1E01BC200025E711 /* repos-torvalds-linux-releases-tags-v4.4.data */,
+				7A3CC65B1E01BC200025E711 /* repos-torvalds-linux-releases-tags-v4.4.response */,
+			);
+			path = Fixtures;
+			sourceTree = "<group>";
+		};
+		BE88E7E81C88C6B30034A112 = {
+			isa = PBXGroup;
+			children = (
+				BE88E7F41C88C6B30034A112 /* Tentacle */,
+				BE88E8001C88C6B30034A112 /* Tests */,
+				BE88E8681C88F0990034A112 /* update-test-fixtures */,
+				BE88E8271C88C7E90034A112 /* Frameworks */,
+				BE88E7F31C88C6B30034A112 /* Products */,
+			);
+			sourceTree = "<group>";
+			usesTabs = 0;
+		};
+		BE88E7F31C88C6B30034A112 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE88E7F21C88C6B30034A112 /* Tentacle.framework */,
+				BE88E7FC1C88C6B30034A112 /* Tentacle-OSXTests.xctest */,
+				BE88E8671C88F0990034A112 /* update-test-fixtures.app */,
+				61377C6C1C8A2B2C0081FF24 /* Tentacle.framework */,
+				6190817D1C8A2D2B001BE2F8 /* Tentacle-iOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE88E7F41C88C6B30034A112 /* Tentacle */ = {
+			isa = PBXGroup;
+			children = (
+				BEEE47441C91BB3A000FFC21 /* ArgoExtensions.swift */,
+				927847FC1E0C78A4003B9EE6 /* Author.swift */,
+				CD83C7B91DCE379D00BC2608 /* Availability.swift */,
+				7A8A9D611E5546AC0009DA9E /* Branch.swift */,
+				BE88E80C1C88C72B0034A112 /* Client.swift */,
+				7A1F20EC1D3E85BB00F275F8 /* Color.swift */,
+				7A2788791D4920DA007AC936 /* Comment.swift */,
+				927847F91E0C74B2003B9EE6 /* Commit.swift */,
+				7A6F94C01DECF5FA006E9BAD /* Content.swift */,
+				BE0F40A31C89135D00E3B11A /* Decodable.swift */,
+				927847F61E0B28CF003B9EE6 /* File.swift */,
+				927847FF1E0C78DB003B9EE6 /* FileResponse.swift */,
+				BECB8A8D1CBDD919005D70A6 /* FoundationExtensions.swift */,
+				BEB0765C1C8A001C00ABD373 /* GitHubError.swift */,
+				BE88E7F71C88C6B30034A112 /* Info.plist */,
+				7A1A82551CF3DBAC0076E2DD /* Issue.swift */,
+				7A1A82571CF3DE4C0076E2DD /* Label.swift */,
+				7A1A82591CF3DEEA0076E2DD /* Milestone.swift */,
+				7A1A825D1CF3E5B60076E2DD /* PullRequest.swift */,
+				BE88E8311C88D33D0034A112 /* Release.swift */,
+				BE88E82F1C88CDAB0034A112 /* Repository.swift */,
+				7ABFB4D61D51519B0067B500 /* RepositoryInfo.swift */,
+				BEEE47411C91B8DF000FFC21 /* ResourceType.swift */,
+				BEEE474D1C92623E000FFC21 /* Response.swift */,
+				BE88E82C1C88C94D0034A112 /* Server.swift */,
+				928DF23D1E1117D600E6DE35 /* Sha.swift */,
+				BE88E7F51C88C6B30034A112 /* Tentacle.h */,
+				BECB8A8A1CBDCD17005D70A6 /* User.swift */,
+			);
+			name = Tentacle;
+			path = Sources/Tentacle;
+			sourceTree = "<group>";
+		};
+		BE88E8001C88C6B30034A112 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				BE2B6A6B1C8B854F0080BFEB /* ClientTests.swift */,
+				7A1F20EF1D3E86D900F275F8 /* ColorTests.swift */,
+				7A27887B1D49223B007AC936 /* CommentsTests.swift */,
+				7A072D8D1DED11C900CFE58F /* ContentTests.swift */,
+				7A22EDBB1E47CB8900524539 /* EndpointTests.swift */,
+				BE0F409F1C89098E00E3B11A /* Fixture.swift */,
+				BE0F40961C8908CB00E3B11A /* Fixtures */,
+				BEB0765E1C8A019A00ABD373 /* GitHubErrorTests.swift */,
+				CD1FE64D1DCF35F60016639E /* HTTPStub.swift */,
+				BE88E8031C88C6B30034A112 /* Info.plist */,
+				7AAB00FC1CF51FC5005A7319 /* IssuesTests.swift */,
+				BE0F40A11C8909EB00E3B11A /* ReleaseTests.swift */,
+				7ABFB4DC1D5159F50067B500 /* RepositoryInfoTests.swift */,
+				BEA86F9C1C9F7E1E0049360B /* RepositoryTests.swift */,
+				BE1E036A1C9AD87F001296C2 /* ResponseTests.swift */,
+				BEA86F991C9F7C230049360B /* ServerTests.swift */,
+				BECB8AA11CBDDF0F005D70A6 /* UserTests.swift */,
+				928DF21B1E0E68D300E6DE35 /* FileResponseTests.swift */,
+				92F0C2B91E391088004A9889 /* FileTests.swift */,
+				92F0C2BC1E391F3F004A9889 /* ArgoExtensionsTests.swift */,
+				7A8A9D641E5547F50009DA9E /* BranchTests.swift */,
+			);
+			name = Tests;
+			path = Tests/TentacleTests;
+			sourceTree = "<group>";
+		};
+		BE88E8271C88C7E90034A112 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				928DF22F1E0E95B600E6DE35 /* Argo.framework */,
+				928DF2301E0E95B600E6DE35 /* Curry.framework */,
+				928DF2321E0E95B600E6DE35 /* ReactiveSwift.framework */,
+				928DF2331E0E95B600E6DE35 /* Result.framework */,
+				928DF2341E0E95B600E6DE35 /* Runes.framework */,
+				928DF2211E0E6A1200E6DE35 /* Argo.framework */,
+				928DF2221E0E6A1200E6DE35 /* Curry.framework */,
+				928DF2231E0E6A1200E6DE35 /* Ogra.framework */,
+				928DF2241E0E6A1200E6DE35 /* ReactiveSwift.framework */,
+				928DF2251E0E6A1200E6DE35 /* Result.framework */,
+				928DF2261E0E6A1200E6DE35 /* Runes.framework */,
+			);
+			name = Frameworks;
+			path = Tentacle;
+			sourceTree = "<group>";
+		};
+		BE88E8681C88F0990034A112 /* update-test-fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				BE88E8701C88F0990034A112 /* Info.plist */,
+				BE88E8741C88F0C50034A112 /* main.swift */,
+			);
+			path = "update-test-fixtures";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		61377C691C8A2B2C0081FF24 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61377C781C8A2B760081FF24 /* Tentacle.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE88E7EF1C88C6B30034A112 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE88E7F61C88C6B30034A112 /* Tentacle.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		61377C6B1C8A2B2C0081FF24 /* Tentacle-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61377C731C8A2B2C0081FF24 /* Build configuration list for PBXNativeTarget "Tentacle-iOS" */;
+			buildPhases = (
+				61377C671C8A2B2C0081FF24 /* Sources */,
+				61377C681C8A2B2C0081FF24 /* Frameworks */,
+				61377C691C8A2B2C0081FF24 /* Headers */,
+				61377C6A1C8A2B2C0081FF24 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Tentacle-iOS";
+			productName = TentacleiOS;
+			productReference = 61377C6C1C8A2B2C0081FF24 /* Tentacle.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6190817C1C8A2D2B001BE2F8 /* Tentacle-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 619081851C8A2D2B001BE2F8 /* Build configuration list for PBXNativeTarget "Tentacle-iOSTests" */;
+			buildPhases = (
+				619081791C8A2D2B001BE2F8 /* Sources */,
+				6190817A1C8A2D2B001BE2F8 /* Frameworks */,
+				6190817B1C8A2D2B001BE2F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				619081841C8A2D2B001BE2F8 /* PBXTargetDependency */,
+			);
+			name = "Tentacle-iOSTests";
+			productName = TentacleiOSTests;
+			productReference = 6190817D1C8A2D2B001BE2F8 /* Tentacle-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BE88E7F11C88C6B30034A112 /* Tentacle-OSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE88E8061C88C6B30034A112 /* Build configuration list for PBXNativeTarget "Tentacle-OSX" */;
+			buildPhases = (
+				BE88E7ED1C88C6B30034A112 /* Sources */,
+				BE88E7EE1C88C6B30034A112 /* Frameworks */,
+				BE88E7EF1C88C6B30034A112 /* Headers */,
+				BE88E7F01C88C6B30034A112 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Tentacle-OSX";
+			productName = Tentacle;
+			productReference = BE88E7F21C88C6B30034A112 /* Tentacle.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BE88E7FB1C88C6B30034A112 /* Tentacle-OSXTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE88E8091C88C6B30034A112 /* Build configuration list for PBXNativeTarget "Tentacle-OSXTests" */;
+			buildPhases = (
+				BE88E7F81C88C6B30034A112 /* Sources */,
+				BE88E7F91C88C6B30034A112 /* Frameworks */,
+				BE88E7FA1C88C6B30034A112 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE88E7FF1C88C6B30034A112 /* PBXTargetDependency */,
+			);
+			name = "Tentacle-OSXTests";
+			productName = TentacleTests;
+			productReference = BE88E7FC1C88C6B30034A112 /* Tentacle-OSXTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BE88E8661C88F0990034A112 /* update-test-fixtures */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE88E8711C88F0990034A112 /* Build configuration list for PBXNativeTarget "update-test-fixtures" */;
+			buildPhases = (
+				BE88E8631C88F0990034A112 /* Sources */,
+				BE88E8641C88F0990034A112 /* Frameworks */,
+				BE88E8651C88F0990034A112 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "update-test-fixtures";
+			productName = "update-test-fixtures";
+			productReference = BE88E8671C88F0990034A112 /* update-test-fixtures.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BE88E7E91C88C6B30034A112 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Matt Diephouse";
+				TargetAttributes = {
+					61377C6B1C8A2B2C0081FF24 = {
+						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0810;
+					};
+					6190817C1C8A2D2B001BE2F8 = {
+						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0810;
+					};
+					BE88E7F11C88C6B30034A112 = {
+						CreatedOnToolsVersion = 7.2.1;
+						LastSwiftMigration = 0810;
+					};
+					BE88E7FB1C88C6B30034A112 = {
+						CreatedOnToolsVersion = 7.2.1;
+						LastSwiftMigration = 0810;
+					};
+					BE88E8661C88F0990034A112 = {
+						CreatedOnToolsVersion = 7.2.1;
+						LastSwiftMigration = 0810;
+					};
+				};
+			};
+			buildConfigurationList = BE88E7EC1C88C6B30034A112 /* Build configuration list for PBXProject "Tentacle" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BE88E7E81C88C6B30034A112;
+			productRefGroup = BE88E7F31C88C6B30034A112 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BE88E7F11C88C6B30034A112 /* Tentacle-OSX */,
+				61377C6B1C8A2B2C0081FF24 /* Tentacle-iOS */,
+				BE88E7FB1C88C6B30034A112 /* Tentacle-OSXTests */,
+				6190817C1C8A2D2B001BE2F8 /* Tentacle-iOSTests */,
+				BE88E8661C88F0990034A112 /* update-test-fixtures */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		61377C6A1C8A2B2C0081FF24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6190817B1C8A2D2B001BE2F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				928DF2201E0E693100E6DE35 /* create-file-sample-response.data in Resources */,
+				7A3CC6991E01BC200025E711 /* repos-mdiep-Tentacle-contents-update-test-fixtures.data in Resources */,
+				7A3CC68D1E01BC200025E711 /* users-Palleas-Opensource-repos.data in Resources */,
+				7A3CC69F1E01BC200025E711 /* repos-mdiep-MDPSplitView-releases-assets-433845.response in Resources */,
+				7A8A9D6A1E5548070009DA9E /* repos-Carthage-ReactiveTask-branches.data in Resources */,
+				7A3CC6771E01BC200025E711 /* repos-Carthage-Carthage-releases.page-1-per_page-30.response in Resources */,
+				7A3CC6751E01BC200025E711 /* repos-Carthage-Carthage-releases.page-1-per_page-30.data in Resources */,
+				7A3CC66F1E01BC200025E711 /* orgs-raccommunity-repos.response in Resources */,
+				7A3CC6691E01BC200025E711 /* repos-Palleas-opensource-Sample-repository-contents-Tools.data in Resources */,
+				7A3CC6631E01BC200025E711 /* repos-Palleas-opensource-Sample-repository-contents-README.md.response in Resources */,
+				7A3CC67B1E01BC200025E711 /* repos-Carthage-Carthage-releases.page-2-per_page-30.response in Resources */,
+				7A3CC69D1E01BC200025E711 /* repos-mdiep-MDPSplitView-releases-assets-433845.data in Resources */,
+				7A3CC6731E01BC200025E711 /* repos-Carthage-Carthage-releases-tags-0.15.response in Resources */,
+				7A3CC65F1E01BC200025E711 /* repos-mdiep-Tentacle-contents-Carthage-Checkouts-ReactiveSwift.response in Resources */,
+				7A3CC6891E01BC200025E711 /* users-mdiep.data in Resources */,
+				7A3CC6611E01BC200025E711 /* repos-Palleas-opensource-Sample-repository-contents-README.md.data in Resources */,
+				7A3CC6931E01BC200025E711 /* users-test.response in Resources */,
+				7A3CC67F1E01BC200025E711 /* repos-mdiep-MDPSplitView-releases-tags-1.0.2.response in Resources */,
+				7A3CC6811E01BC200025E711 /* repos-Palleas-Opensource-Sample-repository-issues-1-comments.data in Resources */,
+				7A3CC66D1E01BC200025E711 /* orgs-raccommunity-repos.data in Resources */,
+				7A3CC6A31E01BC200025E711 /* repos-mdiep-NonExistent-releases-tags-tag.response in Resources */,
+				7A3CC6971E01BC200025E711 /* repos-Palleas-opensource-Sample-repository-contents-say.data in Resources */,
+				7A3CC6A11E01BC200025E711 /* repos-mdiep-NonExistent-releases-tags-tag.data in Resources */,
+				7A3CC6791E01BC200025E711 /* repos-Carthage-Carthage-releases.page-2-per_page-30.data in Resources */,
+				7A3CC6711E01BC200025E711 /* repos-Carthage-Carthage-releases-tags-0.15.data in Resources */,
+				7A3CC68B1E01BC200025E711 /* users-mdiep.response in Resources */,
+				7A3CC66B1E01BC200025E711 /* repos-Palleas-opensource-Sample-repository-contents-Tools.response in Resources */,
+				7A3CC6A71E01BC200025E711 /* repos-torvalds-linux-releases-tags-v4.4.response in Resources */,
+				7A3CC6A51E01BC200025E711 /* repos-torvalds-linux-releases-tags-v4.4.data in Resources */,
+				7A3CC6951E01BC200025E711 /* repos-Palleas-opensource-Sample-repository-contents-say.response in Resources */,
+				7A3CC6651E01BC200025E711 /* repos-Palleas-opensource-Sample-repository-contents-Tools-say.data in Resources */,
+				7A8A9D6C1E5548070009DA9E /* repos-Carthage-ReactiveTask-branches.response in Resources */,
+				7A3CC6911E01BC200025E711 /* users-test.data in Resources */,
+				7A3CC68F1E01BC200025E711 /* users-Palleas-Opensource-repos.response in Resources */,
+				7A3CC69B1E01BC200025E711 /* repos-mdiep-Tentacle-contents-update-test-fixtures.response in Resources */,
+				7A3CC6851E01BC200025E711 /* repos-Palleas-opensource-Sample-repository-issues.data in Resources */,
+				7A3CC6831E01BC200025E711 /* repos-Palleas-Opensource-Sample-repository-issues-1-comments.response in Resources */,
+				7A3CC6871E01BC200025E711 /* repos-Palleas-opensource-Sample-repository-issues.response in Resources */,
+				7A3CC67D1E01BC200025E711 /* repos-mdiep-MDPSplitView-releases-tags-1.0.2.data in Resources */,
+				7A3CC6671E01BC200025E711 /* repos-Palleas-opensource-Sample-repository-contents-Tools-say.response in Resources */,
+				7A3CC65D1E01BC200025E711 /* repos-mdiep-Tentacle-contents-Carthage-Checkouts-ReactiveSwift.data in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE88E7F01C88C6B30034A112 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE88E7FA1C88C6B30034A112 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				928DF21F1E0E693000E6DE35 /* create-file-sample-response.data in Resources */,
+				7A3CC6981E01BC200025E711 /* repos-mdiep-Tentacle-contents-update-test-fixtures.data in Resources */,
+				7A3CC68C1E01BC200025E711 /* users-Palleas-Opensource-repos.data in Resources */,
+				7A3CC69E1E01BC200025E711 /* repos-mdiep-MDPSplitView-releases-assets-433845.response in Resources */,
+				7A8A9D691E5548070009DA9E /* repos-Carthage-ReactiveTask-branches.data in Resources */,
+				7A3CC6761E01BC200025E711 /* repos-Carthage-Carthage-releases.page-1-per_page-30.response in Resources */,
+				7A3CC6741E01BC200025E711 /* repos-Carthage-Carthage-releases.page-1-per_page-30.data in Resources */,
+				7A3CC66E1E01BC200025E711 /* orgs-raccommunity-repos.response in Resources */,
+				7A3CC6681E01BC200025E711 /* repos-Palleas-opensource-Sample-repository-contents-Tools.data in Resources */,
+				7A3CC6621E01BC200025E711 /* repos-Palleas-opensource-Sample-repository-contents-README.md.response in Resources */,
+				7A3CC67A1E01BC200025E711 /* repos-Carthage-Carthage-releases.page-2-per_page-30.response in Resources */,
+				7A3CC69C1E01BC200025E711 /* repos-mdiep-MDPSplitView-releases-assets-433845.data in Resources */,
+				7A3CC6721E01BC200025E711 /* repos-Carthage-Carthage-releases-tags-0.15.response in Resources */,
+				7A3CC65E1E01BC200025E711 /* repos-mdiep-Tentacle-contents-Carthage-Checkouts-ReactiveSwift.response in Resources */,
+				7A3CC6881E01BC200025E711 /* users-mdiep.data in Resources */,
+				7A3CC6601E01BC200025E711 /* repos-Palleas-opensource-Sample-repository-contents-README.md.data in Resources */,
+				7A3CC6921E01BC200025E711 /* users-test.response in Resources */,
+				7A3CC67E1E01BC200025E711 /* repos-mdiep-MDPSplitView-releases-tags-1.0.2.response in Resources */,
+				7A3CC6801E01BC200025E711 /* repos-Palleas-Opensource-Sample-repository-issues-1-comments.data in Resources */,
+				7A3CC66C1E01BC200025E711 /* orgs-raccommunity-repos.data in Resources */,
+				7A3CC6A21E01BC200025E711 /* repos-mdiep-NonExistent-releases-tags-tag.response in Resources */,
+				7A3CC6961E01BC200025E711 /* repos-Palleas-opensource-Sample-repository-contents-say.data in Resources */,
+				7A3CC6A01E01BC200025E711 /* repos-mdiep-NonExistent-releases-tags-tag.data in Resources */,
+				7A3CC6781E01BC200025E711 /* repos-Carthage-Carthage-releases.page-2-per_page-30.data in Resources */,
+				7A3CC6701E01BC200025E711 /* repos-Carthage-Carthage-releases-tags-0.15.data in Resources */,
+				7A3CC68A1E01BC200025E711 /* users-mdiep.response in Resources */,
+				7A3CC66A1E01BC200025E711 /* repos-Palleas-opensource-Sample-repository-contents-Tools.response in Resources */,
+				7A3CC6A61E01BC200025E711 /* repos-torvalds-linux-releases-tags-v4.4.response in Resources */,
+				7A3CC6A41E01BC200025E711 /* repos-torvalds-linux-releases-tags-v4.4.data in Resources */,
+				7A3CC6941E01BC200025E711 /* repos-Palleas-opensource-Sample-repository-contents-say.response in Resources */,
+				7A3CC6641E01BC200025E711 /* repos-Palleas-opensource-Sample-repository-contents-Tools-say.data in Resources */,
+				7A8A9D6B1E5548070009DA9E /* repos-Carthage-ReactiveTask-branches.response in Resources */,
+				7A3CC6901E01BC200025E711 /* users-test.data in Resources */,
+				7A3CC68E1E01BC200025E711 /* users-Palleas-Opensource-repos.response in Resources */,
+				7A3CC69A1E01BC200025E711 /* repos-mdiep-Tentacle-contents-update-test-fixtures.response in Resources */,
+				7A3CC6841E01BC200025E711 /* repos-Palleas-opensource-Sample-repository-issues.data in Resources */,
+				7A3CC6821E01BC200025E711 /* repos-Palleas-Opensource-Sample-repository-issues-1-comments.response in Resources */,
+				7A3CC6861E01BC200025E711 /* repos-Palleas-opensource-Sample-repository-issues.response in Resources */,
+				7A3CC67C1E01BC200025E711 /* repos-mdiep-MDPSplitView-releases-tags-1.0.2.data in Resources */,
+				7A3CC6661E01BC200025E711 /* repos-Palleas-opensource-Sample-repository-contents-Tools-say.response in Resources */,
+				7A3CC65C1E01BC200025E711 /* repos-mdiep-Tentacle-contents-Carthage-Checkouts-ReactiveSwift.data in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE88E8651C88F0990034A112 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		61377C671C8A2B2C0081FF24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				928DF23F1E11187C00E6DE35 /* Sha.swift in Sources */,
+				BEEE47461C91BB3A000FFC21 /* ArgoExtensions.swift in Sources */,
+				61377C791C8A2B760081FF24 /* Client.swift in Sources */,
+				927847FB1E0C75B1003B9EE6 /* Commit.swift in Sources */,
+				BEEE47431C91B8DF000FFC21 /* ResourceType.swift in Sources */,
+				7A6F94C21DECF93E006E9BAD /* Content.swift in Sources */,
+				7A2F66141CF5281200463602 /* PullRequest.swift in Sources */,
+				61377C7C1C8A2B760081FF24 /* Release.swift in Sources */,
+				927847FE1E0C78BA003B9EE6 /* Author.swift in Sources */,
+				7A27887E1D49223E007AC936 /* Comment.swift in Sources */,
+				7A1F20EE1D3E862200F275F8 /* Color.swift in Sources */,
+				7ABFB4D81D51519B0067B500 /* RepositoryInfo.swift in Sources */,
+				BEEE474F1C92623E000FFC21 /* Response.swift in Sources */,
+				927848011E0C78EA003B9EE6 /* FileResponse.swift in Sources */,
+				7A2F66121CF5280200463602 /* Label.swift in Sources */,
+				7A2F66131CF5280600463602 /* Milestone.swift in Sources */,
+				CD83C7BB1DCE379D00BC2608 /* Availability.swift in Sources */,
+				61377C7D1C8A2B760081FF24 /* Repository.swift in Sources */,
+				BECB8A8F1CBDD91D005D70A6 /* FoundationExtensions.swift in Sources */,
+				7A8A9D631E5547C70009DA9E /* Branch.swift in Sources */,
+				61377C7B1C8A2B760081FF24 /* GitHubError.swift in Sources */,
+				927847F81E0B28FB003B9EE6 /* File.swift in Sources */,
+				61377C7E1C8A2B760081FF24 /* Server.swift in Sources */,
+				61377C7A1C8A2B760081FF24 /* Decodable.swift in Sources */,
+				BECB8A901CBDD920005D70A6 /* User.swift in Sources */,
+				7A2F66111CF527FB00463602 /* Issue.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		619081791C8A2D2B001BE2F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A1F20F11D3E872800F275F8 /* ColorTests.swift in Sources */,
+				92F0C2BE1E391F3F004A9889 /* ArgoExtensionsTests.swift in Sources */,
+				619081881C8A2DB7001BE2F8 /* Fixture.swift in Sources */,
+				928DF22E1E0E6A8100E6DE35 /* FileResponseTests.swift in Sources */,
+				BE2B6A6D1C8B854F0080BFEB /* ClientTests.swift in Sources */,
+				7A27887D1D49223B007AC936 /* CommentsTests.swift in Sources */,
+				BEA86F9B1C9F7C230049360B /* ServerTests.swift in Sources */,
+				7A2F66101CF527EB00463602 /* IssuesTests.swift in Sources */,
+				CD1FE6501DCF36070016639E /* HTTPStub.swift in Sources */,
+				92F0C2BB1E39108B004A9889 /* FileTests.swift in Sources */,
+				BEA86F9E1C9F7E1E0049360B /* RepositoryTests.swift in Sources */,
+				6190818B1C8A2DB7001BE2F8 /* (null) in Sources */,
+				619081891C8A2DB7001BE2F8 /* GitHubErrorTests.swift in Sources */,
+				7A22EDBD1E47CB8900524539 /* EndpointTests.swift in Sources */,
+				7A072D8F1DED11C900CFE58F /* ContentTests.swift in Sources */,
+				BECB8AA41CBDDF0F005D70A6 /* UserTests.swift in Sources */,
+				7ABFB4DE1D515A350067B500 /* RepositoryInfoTests.swift in Sources */,
+				7A8A9D661E5547F50009DA9E /* BranchTests.swift in Sources */,
+				BE1E036C1C9AD87F001296C2 /* ResponseTests.swift in Sources */,
+				6190818A1C8A2DB7001BE2F8 /* ReleaseTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE88E7ED1C88C6B30034A112 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				928DF23E1E1117D600E6DE35 /* Sha.swift in Sources */,
+				BEEE47451C91BB3A000FFC21 /* ArgoExtensions.swift in Sources */,
+				BE88E82D1C88C94D0034A112 /* Server.swift in Sources */,
+				927847FA1E0C74B2003B9EE6 /* Commit.swift in Sources */,
+				BEEE47421C91B8DF000FFC21 /* ResourceType.swift in Sources */,
+				7A6F94C11DECF5FA006E9BAD /* Content.swift in Sources */,
+				7A1A825E1CF3E5B60076E2DD /* PullRequest.swift in Sources */,
+				BEB0765D1C8A001C00ABD373 /* GitHubError.swift in Sources */,
+				927847FD1E0C78A4003B9EE6 /* Author.swift in Sources */,
+				7A27887A1D4920DA007AC936 /* Comment.swift in Sources */,
+				7A1F20ED1D3E85BB00F275F8 /* Color.swift in Sources */,
+				7ABFB4D71D51519B0067B500 /* RepositoryInfo.swift in Sources */,
+				BEEE474E1C92623E000FFC21 /* Response.swift in Sources */,
+				927848001E0C78DB003B9EE6 /* FileResponse.swift in Sources */,
+				7A1A82581CF3DE4C0076E2DD /* Label.swift in Sources */,
+				7A1A825A1CF3DEEA0076E2DD /* Milestone.swift in Sources */,
+				CD83C7BA1DCE379D00BC2608 /* Availability.swift in Sources */,
+				BE88E8321C88D33D0034A112 /* Release.swift in Sources */,
+				BE88E80D1C88C72B0034A112 /* Client.swift in Sources */,
+				7A8A9D621E5546AC0009DA9E /* Branch.swift in Sources */,
+				BE0F40A41C89135D00E3B11A /* Decodable.swift in Sources */,
+				927847F71E0B28CF003B9EE6 /* File.swift in Sources */,
+				BECB8A8B1CBDCD17005D70A6 /* User.swift in Sources */,
+				BECB8A8E1CBDD919005D70A6 /* FoundationExtensions.swift in Sources */,
+				BE88E8301C88CDAB0034A112 /* Repository.swift in Sources */,
+				7A1A82561CF3DBAC0076E2DD /* Issue.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE88E7F81C88C6B30034A112 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92F0C2BA1E391088004A9889 /* FileTests.swift in Sources */,
+				7AAB00FD1CF51FC5005A7319 /* IssuesTests.swift in Sources */,
+				BE1E036B1C9AD87F001296C2 /* ResponseTests.swift in Sources */,
+				92F0C2BD1E391F3F004A9889 /* ArgoExtensionsTests.swift in Sources */,
+				7A22EDBC1E47CB8900524539 /* EndpointTests.swift in Sources */,
+				BEA86F9D1C9F7E1E0049360B /* RepositoryTests.swift in Sources */,
+				928DF22D1E0E6A8000E6DE35 /* FileResponseTests.swift in Sources */,
+				BEB076601C8A019E00ABD373 /* GitHubErrorTests.swift in Sources */,
+				BE0F40A01C89098E00E3B11A /* Fixture.swift in Sources */,
+				7ABFB4DD1D5159F50067B500 /* RepositoryInfoTests.swift in Sources */,
+				BECB8AA31CBDDF0F005D70A6 /* UserTests.swift in Sources */,
+				7A8A9D651E5547F50009DA9E /* BranchTests.swift in Sources */,
+				7A27887C1D49223B007AC936 /* CommentsTests.swift in Sources */,
+				CD1FE64F1DCF36070016639E /* HTTPStub.swift in Sources */,
+				BE2B6A6C1C8B854F0080BFEB /* ClientTests.swift in Sources */,
+				7A072D8E1DED11C900CFE58F /* ContentTests.swift in Sources */,
+				7A1F20F01D3E86D900F275F8 /* ColorTests.swift in Sources */,
+				BEA86F9A1C9F7C230049360B /* ServerTests.swift in Sources */,
+				BE0F40A21C8909EB00E3B11A /* ReleaseTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE88E8631C88F0990034A112 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE88E8751C88F0C50034A112 /* main.swift in Sources */,
+				BE0F40A51C89191600E3B11A /* Fixture.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		619081841C8A2D2B001BE2F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 61377C6B1C8A2B2C0081FF24 /* Tentacle-iOS */;
+			targetProxy = 619081831C8A2D2B001BE2F8 /* PBXContainerItemProxy */;
+		};
+		BE88E7FF1C88C6B30034A112 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE88E7F11C88C6B30034A112 /* Tentacle-OSX */;
+			targetProxy = BE88E7FE1C88C6B30034A112 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		61377C711C8A2B2C0081FF24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Sources/Tentacle/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.diephouse.matt.Tentacle;
+				PRODUCT_NAME = Tentacle;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		61377C721C8A2B2C0081FF24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Sources/Tentacle/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.diephouse.matt.Tentacle;
+				PRODUCT_NAME = Tentacle;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		619081861C8A2D2B001BE2F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = Tests/TentacleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.diephouse.matt.TentacleiOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		619081871C8A2D2B001BE2F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = Tests/TentacleTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.diephouse.matt.TentacleiOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BE88E8041C88C6B30034A112 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BE88E8051C88C6B30034A112 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BE88E8071C88C6B30034A112 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = Sources/Tentacle/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.diephouse.matt.Tentacle;
+				PRODUCT_NAME = Tentacle;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BE88E8081C88C6B30034A112 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = Sources/Tentacle/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.diephouse.matt.Tentacle;
+				PRODUCT_NAME = Tentacle;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Release;
+		};
+		BE88E80A1C88C6B30034A112 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Tests/TentacleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.diephouse.matt.TentacleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BE88E80B1C88C6B30034A112 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Tests/TentacleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.diephouse.matt.TentacleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		BE88E8721C88F0990034A112 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "update-test-fixtures/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.diephouse.matt.update-test-fixtures";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BE88E8731C88F0990034A112 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "update-test-fixtures/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.diephouse.matt.update-test-fixtures";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		61377C731C8A2B2C0081FF24 /* Build configuration list for PBXNativeTarget "Tentacle-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61377C711C8A2B2C0081FF24 /* Debug */,
+				61377C721C8A2B2C0081FF24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		619081851C8A2D2B001BE2F8 /* Build configuration list for PBXNativeTarget "Tentacle-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				619081861C8A2D2B001BE2F8 /* Debug */,
+				619081871C8A2D2B001BE2F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE88E7EC1C88C6B30034A112 /* Build configuration list for PBXProject "Tentacle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE88E8041C88C6B30034A112 /* Debug */,
+				BE88E8051C88C6B30034A112 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE88E8061C88C6B30034A112 /* Build configuration list for PBXNativeTarget "Tentacle-OSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE88E8071C88C6B30034A112 /* Debug */,
+				BE88E8081C88C6B30034A112 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE88E8091C88C6B30034A112 /* Build configuration list for PBXNativeTarget "Tentacle-OSXTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE88E80A1C88C6B30034A112 /* Debug */,
+				BE88E80B1C88C6B30034A112 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE88E8711C88F0990034A112 /* Build configuration list for PBXNativeTarget "update-test-fixtures" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE88E8721C88F0990034A112 /* Debug */,
+				BE88E8731C88F0990034A112 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BE88E7E91C88C6B30034A112 /* Project object */;
+}
