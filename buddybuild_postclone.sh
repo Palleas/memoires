@@ -9,6 +9,6 @@ cp "${BUDDYBUILD_SECURE_FILES}/aws-config" "${HOME}/.aws/config" || true
 cp "${BUDDYBUILD_SECURE_FILES}/aws-credentials" "${HOME}/.aws/credentials" || true
 
 echo "Downloading dependencies from S3 using Rome..."
-make deps
+make deps || true
 
 #cp ${BUDDYBUILD_SECURE_FILES}/Config.xcconfig ${BUDDYBUILD_WORKSPACE}/Memoires/Config.xcconfig || true
