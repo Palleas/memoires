@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        timer(interval: .seconds(1), on: DateScheduler)
+        timer(interval: .seconds(1), on: QueueScheduler())
             .startWithValues { date in
                 print("Tick! (\(date))")
             }
