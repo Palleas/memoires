@@ -4,14 +4,14 @@
 
 [RepositoryMap]
   XCGLogger = XCGLogger (iOS)
-  Nimble = Nimble-iOS
-  Quick = Quick-iOS
-  ReactiveCocoa = ReactiveCocoa-iOS
-  ReactiveSwift = ReactiveSwift-iOS
-  Result = Result-iOS
-  YamlSwift = Yaml iOS
-  keychain-swift
-  Tentacle = Tentacle-iOS
-  Argo = Argo-iOS
-  Curry = Curry-iOS
-  Runes = Runes-iOS
+  Nimble = Nimble-iOS,Nimble-macOS,Nimble-tvOS
+  Quick = Quick-iOS,Quick-macOS,Quick-tvOS
+  ReactiveCocoa = ReactiveCocoa-iOS,ReactiveCocoa-macOS,ReactiveCocoa-tvOS,ReactiveCocoa-watchOS
+  ReactiveSwift = ReactiveSwift-iOS,ReactiveSwift-macOS,ReactiveSwift-tvOS,ReactiveSwift-watchOS
+  Result = Result-iOS,Result-Mac,Result-tvOS,Result-watchOS
+  YamlSwift = Yaml iOS,Yaml OSX,Yaml tvOS
+  keychain-swift = KeychainSwift-macOS,KeychainSwift,KeychainSwift-tvOS,KeychainSwift-watchOS
+  Tentacle = Tentacle-iOS,Tentacle-OSX
+  Argo = Argo-iOS,Argo-Mac,Argo-tvOS,Argo-watchOS
+  Curry = Curry-iOS,Curry-Mac,Curry-watchOS,Curry-tvOS
+  Runes = Runes-iOS,Runes-Mac,Runes-watchOS,Runes-tvOS

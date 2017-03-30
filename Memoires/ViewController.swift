@@ -7,12 +7,19 @@
 //
 
 import UIKit
+import ReactiveCocoa
+import ReactiveSwift
+import Result
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        timer(interval: .seconds(1), on: DateScheduler)
+            .startWithValues { date in
+                print("Tick! (\(date))")
+            }
     }
 
     override func didReceiveMemoryWarning() {
