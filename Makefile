@@ -7,7 +7,7 @@ update:
 	$(ROME) upload
 
 deps:
-	$(CARTHAGE) update --no-build
+	$(CARTHAGE) update --no-build --no-use-binaries
 	$(ROME) download
 
 rebuild-assets:
