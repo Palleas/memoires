@@ -8,7 +8,7 @@ update:
 	$(ROME) upload --platform ios
 
 bootstrap:
-	$(CARTHAGE) update --no-build --no-use-binaries --platform ios
+	$(CARTHAGE) update --no-checkout --no-build --no-use-binaries --platform ios
 	$(ROME) download --platform ios
 
 dependencies:
