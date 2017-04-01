@@ -1,14 +1,21 @@
 CARTHAGE=carthage
-SWIFT_GEN=swiftgen
+BREW=brew
+SWIFTGEN=swiftgen
 ROME=rome
 
 update:
 	$(CARTHAGE) update --no-use-binaries --platform ios
 	$(ROME) upload --platform ios
 
-deps:
+bootstrap:
 	$(CARTHAGE) update --no-build --no-use-binaries --platform ios
 	$(ROME) download --platform ios
 
+dependencies:
+	$(BREW) update
+	$(BREW) install swiftgen rome
+
 rebuild-assets:
-	swiftgen images -o Memoires/Assets.swift Memoires
+	$(SWIFTGEN) images -o Memoires/Assets.swift Memoires
+	$(SWIFTGEN) storyboard -o Memoires/Storyboards.swift Memoires
+
