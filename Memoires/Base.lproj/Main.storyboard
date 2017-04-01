@@ -1,14 +1,39 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Navigation Controller-->
+        <scene sceneID="hFN-fj-Ufy">
+            <objects>
+                <navigationController id="ZPJ-vl-khg" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="FOD-aR-25s">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="1" green="0.80392158031463623" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="IKY-ei-Oau"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Qp-yR-hSx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-791" y="-592"/>
+        </scene>
+        <!--Root View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="RootViewController" id="BYZ-38-t0r" customClass="RootViewController" customModule="Memoires" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +41,64 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="deviceRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" id="zo0-ud-0jY"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
+        <!--Authentication View Controller-->
+        <scene sceneID="K3p-VO-e2M">
+            <objects>
+                <viewController id="IwP-HQ-TTX" customClass="AuthenticationViewController" customModule="Memoires" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BGV-f0-axg"/>
+                        <viewControllerLayoutGuide type="bottom" id="43b-kV-oZo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HAc-vw-Bq5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="lkK-bw-JXc">
+                                <rect key="frame" x="66" y="139" width="242" height="387.5"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="octocat" translatesAutoresizingMaskIntoConstraints="NO" id="IbE-GK-mwa">
+                                        <rect key="frame" x="0.0" y="0.0" width="242" height="236"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Memoires will use your Github account to fetch informations about your blog, as well as posts. Revoke your access at anytime." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="56b-qs-CgP">
+                                        <rect key="frame" x="0.0" y="246" width="242" height="101.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.86666667461395264" green="0.86666667461395264" blue="0.86666667461395264" alpha="1" colorSpace="deviceRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sKy-V6-CGf">
+                                        <rect key="frame" x="0.0" y="357.5" width="242" height="30"/>
+                                        <color key="backgroundColor" red="1" green="0.80000001192092896" blue="0.0" alpha="0.89999997615814209" colorSpace="deviceRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="Authenticate now with Github">
+                                            <color key="titleColor" red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="deviceRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="242" id="3k3-5W-1Hm"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="deviceRGB"/>
+                        <constraints>
+                            <constraint firstItem="lkK-bw-JXc" firstAttribute="centerY" secondItem="HAc-vw-Bq5" secondAttribute="centerY" id="8NW-P5-Qm5"/>
+                            <constraint firstItem="lkK-bw-JXc" firstAttribute="centerX" secondItem="HAc-vw-Bq5" secondAttribute="centerX" id="feP-ne-T7r"/>
+                        </constraints>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DIa-KZ-Qrd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1225" y="-729"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="octocat" width="242" height="236"/>
+    </resources>
 </document>
