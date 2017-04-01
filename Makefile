@@ -14,7 +14,7 @@ bootstrap:
 dependencies:
 	$(BREW) update
 	$(BREW) install swiftgen 
-	$(BREW) install rome
+	$(BREW) install blender/homebrew-tap/rome
 
 rebuild-assets:
 	$(SWIFTGEN) images -o Memoires/Assets.swift Memoires
