@@ -13,7 +13,8 @@ bootstrap:
 
 dependencies:
 	$(BREW) update
-	$(BREW) install swiftgen rome
+	$(BREW) install swiftgen 
+	$(BREW) install rome
 
 rebuild-assets:
 	$(SWIFTGEN) images -o Memoires/Assets.swift Memoires
