@@ -37,6 +37,10 @@
 		7A71BEBA1E914D6D00431DA8 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7AE079131E8C7CAC005F1C5A /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7A71BEBB1E914D6D00431DA8 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7AE079141E8C7CAC005F1C5A /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7A71BEBD1E914DE200431DA8 /* OnboardingSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A71BEBC1E914DE200431DA8 /* OnboardingSpec.swift */; };
+		7A91AFA21E9176BA0059C898 /* ReactiveSwift.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7AE079161E8C7CAC005F1C5A /* ReactiveSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7A91AFA31E9176BA0059C898 /* Result.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7AE079171E8C7CAC005F1C5A /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7A91AFA41E9176C30059C898 /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE079161E8C7CAC005F1C5A /* ReactiveSwift.framework */; };
+		7A91AFA51E9176C30059C898 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE079171E8C7CAC005F1C5A /* Result.framework */; };
 		7AE0791B1E8C7CAC005F1C5A /* Argo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE079101E8C7CAC005F1C5A /* Argo.framework */; };
 		7AE0791C1E8C7CAC005F1C5A /* Argo.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE079101E8C7CAC005F1C5A /* Argo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7AE0791D1E8C7CAC005F1C5A /* Curry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE079111E8C7CAC005F1C5A /* Curry.framework */; };
@@ -86,6 +90,8 @@
 			files = (
 				7A71BEBA1E914D6D00431DA8 /* Nimble.framework in CopyFiles */,
 				7A71BEBB1E914D6D00431DA8 /* Quick.framework in CopyFiles */,
+				7A91AFA21E9176BA0059C898 /* ReactiveSwift.framework in CopyFiles */,
+				7A91AFA31E9176BA0059C898 /* Result.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,6 +198,8 @@
 			files = (
 				7A71BEB71E914D6100431DA8 /* Nimble.framework in Frameworks */,
 				7A71BEB81E914D6100431DA8 /* Quick.framework in Frameworks */,
+				7A91AFA41E9176C30059C898 /* ReactiveSwift.framework in Frameworks */,
+				7A91AFA51E9176C30059C898 /* Result.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
