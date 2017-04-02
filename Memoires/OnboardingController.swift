@@ -8,13 +8,18 @@ protocol StateTokenFactory {
 }
 
 final class OnboardingController<F: StateTokenFactory>{
+
     struct Credentials {
         let clientId: String
         let clientSecret: String
     }
     
+    struct Token {
+        let value: String
+    }
+    
     enum OnboardingError: Error {
-        
+        case invalidUrl
     }
 
     enum State: Equatable {
@@ -24,12 +29,13 @@ final class OnboardingController<F: StateTokenFactory>{
             switch (lhs, rhs) {
             case let (.openAuthorizeURL(url1), .openAuthorizeURL(url2)):
                 return url1 == url2
-            default:
-                return false
             }
         }
     }
-    
+
+    typealias URLResult = (code: String, state: String)
+    private let signingToken = Signal<URLResult, OnboardingError>.pipe()
+
     private let credentials: Credentials
     private let redirectURI: String
     private let tokenFactory: F
@@ -48,7 +54,23 @@ final class OnboardingController<F: StateTokenFactory>{
     }
     
     func finalizeAuthentication(with url: URL) {
+        guard let comps = NSURLComponents(url: url, resolvingAgainstBaseURL: true) else {
+            signingToken.input.send(error: .invalidUrl)
+            return
+        }
         
+        guard let code = comps.queryItems?.filter({ $0.name == "code" }).first?.value else {
+            signingToken.input.send(error: .invalidUrl)
+            return
+        }
+        
+        guard let state = comps.queryItems?.filter({ $0.name == "state" }).first?.value else {
+            signingToken.input.send(error: .invalidUrl)
+            return
+        }
+        
+        
+        signingToken.input.send(value: (code, state))
     }
     
     func url(state: F.TokenType) -> URL {
