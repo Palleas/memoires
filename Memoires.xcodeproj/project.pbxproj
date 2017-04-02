@@ -42,23 +42,14 @@
 		7A91AFA41E9176C30059C898 /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE079161E8C7CAC005F1C5A /* ReactiveSwift.framework */; };
 		7A91AFA51E9176C30059C898 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE079171E8C7CAC005F1C5A /* Result.framework */; };
 		7AE0791B1E8C7CAC005F1C5A /* Argo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE079101E8C7CAC005F1C5A /* Argo.framework */; };
-		7AE0791C1E8C7CAC005F1C5A /* Argo.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE079101E8C7CAC005F1C5A /* Argo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7AE0791D1E8C7CAC005F1C5A /* Curry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE079111E8C7CAC005F1C5A /* Curry.framework */; };
-		7AE0791E1E8C7CAC005F1C5A /* Curry.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE079111E8C7CAC005F1C5A /* Curry.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7AE0791F1E8C7CAC005F1C5A /* KeychainSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE079121E8C7CAC005F1C5A /* KeychainSwift.framework */; };
-		7AE079201E8C7CAC005F1C5A /* KeychainSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE079121E8C7CAC005F1C5A /* KeychainSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7AE079251E8C7CAC005F1C5A /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE079151E8C7CAC005F1C5A /* ReactiveCocoa.framework */; };
-		7AE079261E8C7CAC005F1C5A /* ReactiveCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE079151E8C7CAC005F1C5A /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7AE079271E8C7CAC005F1C5A /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE079161E8C7CAC005F1C5A /* ReactiveSwift.framework */; };
-		7AE079281E8C7CAC005F1C5A /* ReactiveSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE079161E8C7CAC005F1C5A /* ReactiveSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7AE079291E8C7CAC005F1C5A /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE079171E8C7CAC005F1C5A /* Result.framework */; };
-		7AE0792A1E8C7CAC005F1C5A /* Result.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE079171E8C7CAC005F1C5A /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7AE0792B1E8C7CAC005F1C5A /* Runes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE079181E8C7CAC005F1C5A /* Runes.framework */; };
-		7AE0792C1E8C7CAC005F1C5A /* Runes.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE079181E8C7CAC005F1C5A /* Runes.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7AE0792D1E8C7CAC005F1C5A /* Tentacle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE079191E8C7CAC005F1C5A /* Tentacle.framework */; };
-		7AE0792E1E8C7CAC005F1C5A /* Tentacle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE079191E8C7CAC005F1C5A /* Tentacle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7AE0792F1E8C7CAC005F1C5A /* Yaml.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE0791A1E8C7CAC005F1C5A /* Yaml.framework */; };
-		7AE079301E8C7CAC005F1C5A /* Yaml.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE0791A1E8C7CAC005F1C5A /* Yaml.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		853E78925CF6388957B581C5 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 031870A0D443DEA73AB5E3E8 /* CoreText.framework */; };
 		B70D5AD1F4130B2758C5890C /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91017374F9B96AD6F5C846DB /* CoreTelephony.framework */; };
 		F762AB6FC031FBE6BAAFC727 /* BuddyBuildSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C7AA41A5AAF9A840AB2ADB8 /* BuddyBuildSDK.framework */; };
@@ -102,25 +93,6 @@
 			dstSubfolderSpec = 7;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7AE079311E8C7CAC005F1C5A /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				7AE079201E8C7CAC005F1C5A /* KeychainSwift.framework in Embed Frameworks */,
-				7AE0792C1E8C7CAC005F1C5A /* Runes.framework in Embed Frameworks */,
-				7AE079281E8C7CAC005F1C5A /* ReactiveSwift.framework in Embed Frameworks */,
-				7AE079261E8C7CAC005F1C5A /* ReactiveCocoa.framework in Embed Frameworks */,
-				7AE0792A1E8C7CAC005F1C5A /* Result.framework in Embed Frameworks */,
-				7AE0791E1E8C7CAC005F1C5A /* Curry.framework in Embed Frameworks */,
-				7AE0791C1E8C7CAC005F1C5A /* Argo.framework in Embed Frameworks */,
-				7AE079301E8C7CAC005F1C5A /* Yaml.framework in Embed Frameworks */,
-				7AE0792E1E8C7CAC005F1C5A /* Tentacle.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -357,7 +329,6 @@
 				7A4716621E8B47320098DD0B /* Sources */,
 				7A4716631E8B47320098DD0B /* Frameworks */,
 				7A4716641E8B47320098DD0B /* Resources */,
-				7AE079311E8C7CAC005F1C5A /* Embed Frameworks */,
 				7A96BEFB1E919D7000008694 /* CopyFiles */,
 				7A96BEFC1E919D8000008694 /* ShellScript */,
 			);
