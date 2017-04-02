@@ -7,7 +7,7 @@ update:
 	$(CARTHAGE) update --no-use-binaries --platform ios
 	$(ROME) upload --platform ios
 
-bootstrap:
+bootstrap: rebuild-assets
 	$(CARTHAGE) update --no-checkout --no-build --no-use-binaries --platform ios
 	$(ROME) download --platform ios
 
