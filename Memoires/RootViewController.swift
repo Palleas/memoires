@@ -4,20 +4,31 @@ import ReactiveSwift
 import Result
 
 class RootViewController: UIViewController {
-
+    
+    private var mainView: RootView {
+        return view as! RootView
+    }
+    
+    private var viewModel = RootViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        timer(interval: .seconds(1), on: QueueScheduler())
-            .startWithValues { date in
-                print("Tick! (\(date))")
-            }
+        let vcProducer = viewModel.state.map(self.controller).producer
+        vcProducer.observe(on: UIScheduler()).startWithValues { [weak self] controller in
+            controller.willMove(toParentViewController: self)
+            self?.addChildViewController(controller)
+            self?.mainView.transition(to: controller.view)
+            controller.didMove(toParentViewController: self)
+        }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func controller(for state: RootViewModel.State) -> UIViewController {
+        if case .unAuthenticated = state {
+            return UINavigationController(rootViewController: StoryboardScene.Main.instantiateAuthenticateWithGithub())
+        }
+        
+        return StoryboardScene.Main.instantiateListViewController()
     }
-
 
 }

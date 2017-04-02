@@ -17,6 +17,6 @@ dependencies:
 	$(BREW) install blender/homebrew-tap/rome
 
 rebuild-assets:
-	$(SWIFTGEN) images -o Memoires/Assets.swift Memoires
-	$(SWIFTGEN) storyboard -o Memoires/Storyboards.swift Memoires
+	$(SWIFTGEN) images -t dot-syntax-swift3 -o Memoires/Assets.swift Memoires/Assets.xcassets
+	$(SWIFTGEN) storyboards -t swift3 -o Memoires/Storyboards.swift Memoires/Base.lproj/Main.storyboard
 

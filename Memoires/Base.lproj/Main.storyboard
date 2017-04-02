@@ -10,28 +10,27 @@
     </dependencies>
     <scenes>
         <!--Root View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="d1a-GB-KmC">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <viewController storyboardIdentifier="RootViewController" id="BYZ-38-t0r" customClass="RootViewController" customModule="Memoires" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Root" id="GoJ-bC-PFl" customClass="RootViewController" customModule="Memoires" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="WNj-Al-UOs"/>
+                        <viewControllerLayoutGuide type="bottom" id="Hxg-ZW-3ND"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="KjR-Ni-dl7" customClass="RootView" customModule="Memoires">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="deviceRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="zo0-ud-0jY"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C5a-3I-6va" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-210" y="-557"/>
+            <point key="canvasLocation" x="-300" y="-736"/>
         </scene>
-        <!--Authentication View Controller-->
+        <!--Authenticate-->
         <scene sceneID="K3p-VO-e2M">
             <objects>
-                <viewController id="IwP-HQ-TTX" customClass="AuthenticationViewController" customModule="Memoires" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AuthenticateWithGithub" title="Authenticate" id="IwP-HQ-TTX" customClass="AuthenticationViewController" customModule="Memoires" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="BGV-f0-axg"/>
                         <viewControllerLayoutGuide type="bottom" id="43b-kV-oZo"/>
@@ -40,22 +39,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="lkK-bw-JXc">
-                                <rect key="frame" x="66" y="139" width="242" height="387.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="lkK-bw-JXc">
+                                <rect key="frame" x="66" y="115" width="242" height="435.5"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="octocat" translatesAutoresizingMaskIntoConstraints="NO" id="IbE-GK-mwa">
                                         <rect key="frame" x="0.0" y="0.0" width="242" height="236"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Memoires will use your Github account to fetch informations about your blog, as well as posts. Revoke your access at anytime." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="56b-qs-CgP">
-                                        <rect key="frame" x="0.0" y="246" width="242" height="101.5"/>
+                                        <rect key="frame" x="0.0" y="266" width="242" height="101.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.86666667461395264" green="0.86666667461395264" blue="0.86666667461395264" alpha="1" colorSpace="deviceRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sKy-V6-CGf">
-                                        <rect key="frame" x="0.0" y="357.5" width="242" height="30"/>
+                                        <rect key="frame" x="0.0" y="397.5" width="242" height="38"/>
                                         <color key="backgroundColor" red="1" green="0.80000001192092896" blue="0.0" alpha="0.89999997615814209" colorSpace="deviceRGB"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <inset key="contentEdgeInsets" minX="0.0" minY="10" maxX="0.0" maxY="10"/>
                                         <state key="normal" title="Authenticate now with Github">
                                             <color key="titleColor" red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="deviceRGB"/>
                                         </state>
@@ -77,6 +77,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DIa-KZ-Qrd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1225" y="-729"/>
+        </scene>
+        <!--List View Controller-->
+        <scene sceneID="xyj-4q-saQ">
+            <objects>
+                <viewController storyboardIdentifier="ListViewController" id="sJn-0E-dmx" customClass="ListViewController" customModule="Memoires" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bZb-sa-ITt"/>
+                        <viewControllerLayoutGuide type="bottom" id="gYJ-tg-ZkD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="q0J-lJ-MgG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="deviceRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Av-E6-J84" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1225" y="9"/>
         </scene>
     </scenes>
     <resources>
