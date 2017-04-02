@@ -246,6 +246,7 @@
 		7A4716681E8B47320098DD0B /* Memoires */ = {
 			isa = PBXGroup;
 			children = (
+				7A71BEAB1E909F5800431DA8 /* Stylesheets */,
 				7A71BEA51E909CBC00431DA8 /* Assets */,
 				7A4716691E8B47320098DD0B /* AppDelegate.swift */,
 				7A1FB6501E9072A30029DCF4 /* Root */,
@@ -282,10 +283,6 @@
 				7A47166D1E8B47320098DD0B /* Main.storyboard */,
 				7A4716701E8B47320098DD0B /* Assets.xcassets */,
 				7A4716721E8B47320098DD0B /* LaunchScreen.storyboard */,
-				7A71BE9F1E90924900431DA8 /* UIColor+MMRAdditions.swift */,
-				7A71BEA01E90924900431DA8 /* UIFont+MMRAdditions.swift */,
-				7A1FB63B1E905A570029DCF4 /* Storyboards.swift */,
-				7A1FB63C1E905A570029DCF4 /* Assets.swift */,
 			);
 			name = Assets;
 			sourceTree = "<group>";
@@ -297,6 +294,17 @@
 				7A71BEA61E909CF000431DA8 /* CommonListCell.swift */,
 			);
 			name = Common;
+			sourceTree = "<group>";
+		};
+		7A71BEAB1E909F5800431DA8 /* Stylesheets */ = {
+			isa = PBXGroup;
+			children = (
+				7A71BE9F1E90924900431DA8 /* UIColor+MMRAdditions.swift */,
+				7A71BEA01E90924900431DA8 /* UIFont+MMRAdditions.swift */,
+				7A1FB63B1E905A570029DCF4 /* Storyboards.swift */,
+				7A1FB63C1E905A570029DCF4 /* Assets.swift */,
+			);
+			name = Stylesheets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
