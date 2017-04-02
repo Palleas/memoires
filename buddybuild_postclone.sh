@@ -9,4 +9,4 @@ cp "${BUDDYBUILD_SECURE_FILES}/aws-config" "${HOME}/.aws/config"
 cp "${BUDDYBUILD_SECURE_FILES}/aws-credentials" "${HOME}/.aws/credentials"
 
 echo "Downloading dependencies from S3 using Rome..."
-make bootstrap rebuild-assets
+time make bootstrap rebuild-assets
