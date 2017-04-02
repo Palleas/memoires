@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07EB61CEA8A9A3DC60C2B8B9 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D8AF1E80016001A8B456067 /* CoreVideo.framework */; };
+		1FA5CEF7981DACA746D0D31E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61B9432C6A718CFAB6002B82 /* SystemConfiguration.framework */; };
+		43E5661335FFDB27EA9DBA1E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 489835B315F82D9D0C618594 /* QuartzCore.framework */; };
+		48CB9BFE11F0BA2857C55232 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66B64DF4D0DEA6385D0B7AB1 /* AssetsLibrary.framework */; };
+		589DD3C4B7013C38B3DAB2DE /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D70187A3528265F1EDA23E9 /* CoreMedia.framework */; };
+		73F0A9972704E3933AE80A36 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2B423A455E87064838183A9 /* AVFoundation.framework */; };
 		7A1FB63A1E90424C0029DCF4 /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1FB6391E90424C0029DCF4 /* AuthenticationViewController.swift */; };
 		7A1FB63D1E905A570029DCF4 /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1FB63B1E905A570029DCF4 /* Storyboards.swift */; };
 		7A1FB63E1E905A570029DCF4 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1FB63C1E905A570029DCF4 /* Assets.swift */; };
@@ -40,6 +46,9 @@
 		7AE0792E1E8C7CAC005F1C5A /* Tentacle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE079191E8C7CAC005F1C5A /* Tentacle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7AE0792F1E8C7CAC005F1C5A /* Yaml.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE0791A1E8C7CAC005F1C5A /* Yaml.framework */; };
 		7AE079301E8C7CAC005F1C5A /* Yaml.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE0791A1E8C7CAC005F1C5A /* Yaml.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		853E78925CF6388957B581C5 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 031870A0D443DEA73AB5E3E8 /* CoreText.framework */; };
+		B70D5AD1F4130B2758C5890C /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91017374F9B96AD6F5C846DB /* CoreTelephony.framework */; };
+		F762AB6FC031FBE6BAAFC727 /* BuddyBuildSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C7AA41A5AAF9A840AB2ADB8 /* BuddyBuildSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +91,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0160ACE2783B383A2996328B /* Bridging-Header.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		031870A0D443DEA73AB5E3E8 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		489835B315F82D9D0C618594 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		5C7AA41A5AAF9A840AB2ADB8 /* BuddyBuildSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BuddyBuildSDK.framework; path = BuddyBuildSDK.framework; sourceTree = "<group>"; };
+		61B9432C6A718CFAB6002B82 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		66B64DF4D0DEA6385D0B7AB1 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		6D70187A3528265F1EDA23E9 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		6D8AF1E80016001A8B456067 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		7A1FB6391E90424C0029DCF4 /* AuthenticationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationViewController.swift; sourceTree = "<group>"; };
 		7A1FB63B1E905A570029DCF4 /* Storyboards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
 		7A1FB63C1E905A570029DCF4 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
@@ -114,6 +131,8 @@
 		7AE079181E8C7CAC005F1C5A /* Runes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Runes.framework; path = Carthage/Build/iOS/Runes.framework; sourceTree = "<group>"; };
 		7AE079191E8C7CAC005F1C5A /* Tentacle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Tentacle.framework; path = Carthage/Build/iOS/Tentacle.framework; sourceTree = "<group>"; };
 		7AE0791A1E8C7CAC005F1C5A /* Yaml.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Yaml.framework; path = Carthage/Build/iOS/Yaml.framework; sourceTree = "<group>"; };
+		91017374F9B96AD6F5C846DB /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		A2B423A455E87064838183A9 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +149,15 @@
 				7AE0791B1E8C7CAC005F1C5A /* Argo.framework in Frameworks */,
 				7AE0792F1E8C7CAC005F1C5A /* Yaml.framework in Frameworks */,
 				7AE0792D1E8C7CAC005F1C5A /* Tentacle.framework in Frameworks */,
+				F762AB6FC031FBE6BAAFC727 /* BuddyBuildSDK.framework in Frameworks */,
+				48CB9BFE11F0BA2857C55232 /* AssetsLibrary.framework in Frameworks */,
+				853E78925CF6388957B581C5 /* CoreText.framework in Frameworks */,
+				B70D5AD1F4130B2758C5890C /* CoreTelephony.framework in Frameworks */,
+				1FA5CEF7981DACA746D0D31E /* SystemConfiguration.framework in Frameworks */,
+				43E5661335FFDB27EA9DBA1E /* QuartzCore.framework in Frameworks */,
+				73F0A9972704E3933AE80A36 /* AVFoundation.framework in Frameworks */,
+				589DD3C4B7013C38B3DAB2DE /* CoreMedia.framework in Frameworks */,
+				07EB61CEA8A9A3DC60C2B8B9 /* CoreVideo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +192,15 @@
 				7AE079181E8C7CAC005F1C5A /* Runes.framework */,
 				7AE079191E8C7CAC005F1C5A /* Tentacle.framework */,
 				7AE0791A1E8C7CAC005F1C5A /* Yaml.framework */,
+				5C7AA41A5AAF9A840AB2ADB8 /* BuddyBuildSDK.framework */,
+				66B64DF4D0DEA6385D0B7AB1 /* AssetsLibrary.framework */,
+				031870A0D443DEA73AB5E3E8 /* CoreText.framework */,
+				91017374F9B96AD6F5C846DB /* CoreTelephony.framework */,
+				61B9432C6A718CFAB6002B82 /* SystemConfiguration.framework */,
+				489835B315F82D9D0C618594 /* QuartzCore.framework */,
+				A2B423A455E87064838183A9 /* AVFoundation.framework */,
+				6D70187A3528265F1EDA23E9 /* CoreMedia.framework */,
+				6D8AF1E80016001A8B456067 /* CoreVideo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -186,6 +223,7 @@
 				7A47167D1E8B47320098DD0B /* MemoiresTests */,
 				7A4716881E8B47320098DD0B /* MemoiresUITests */,
 				7A4716671E8B47320098DD0B /* Products */,
+				0160ACE2783B383A2996328B /* Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -541,11 +579,13 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = Memoires/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.perfectly-cooked.app.Memoires";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -558,11 +598,13 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = Memoires/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.perfectly-cooked.app.Memoires";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
