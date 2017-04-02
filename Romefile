@@ -1,5 +1,5 @@
 [Cache]
-  S3-Bucket = buddybuild-test-carthage-rome
+  S3-Bucket = feingoldtech-development-ios
 
 [RepositoryMap]
   YamlSwift = Yaml
