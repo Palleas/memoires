@@ -78,6 +78,62 @@
             </objects>
             <point key="canvasLocation" x="1225" y="-729"/>
         </scene>
+        <!--Common List View Controller-->
+        <scene sceneID="wbV-uv-1PD">
+            <objects>
+                <tableViewController storyboardIdentifier="CommonList" id="Be8-fP-HKE" customClass="CommonListViewController" customModule="Memoires" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Odx-NA-qEB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="deviceRGB"/>
+                        <color key="separatorColor" red="0.59215688705444336" green="0.59215688705444336" blue="0.59215688705444336" alpha="1" colorSpace="deviceRGB"/>
+                        <inset key="separatorInset" minX="45" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CommonCell" id="VVy-gI-xat" customClass="CommonListCell" customModule="Memoires" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VVy-gI-xat" id="aOg-VL-Lda">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="251" image="postIcon" translatesAutoresizingMaskIntoConstraints="NO" id="NQB-Yc-wRw">
+                                            <rect key="frame" x="14" y="10" width="18" height="23"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wgu-Up-Ee6">
+                                            <rect key="frame" x="46" y="5" width="324" height="33.5"/>
+                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                            <color key="textColor" red="0.86666667460000002" green="0.86666667460000002" blue="0.86666667460000002" alpha="1" colorSpace="deviceRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.26666668059999998" green="0.26666668059999998" blue="0.26666668059999998" alpha="1" colorSpace="deviceRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="wgu-Up-Ee6" firstAttribute="top" secondItem="aOg-VL-Lda" secondAttribute="top" constant="5" id="3ON-6r-IwL"/>
+                                        <constraint firstItem="NQB-Yc-wRw" firstAttribute="leading" secondItem="aOg-VL-Lda" secondAttribute="leading" constant="14" id="IlJ-vu-ESt"/>
+                                        <constraint firstAttribute="trailing" secondItem="wgu-Up-Ee6" secondAttribute="trailing" constant="5" id="QPb-ue-1R1"/>
+                                        <constraint firstAttribute="bottom" secondItem="wgu-Up-Ee6" secondAttribute="bottom" constant="5" id="UWP-16-Hu5"/>
+                                        <constraint firstItem="wgu-Up-Ee6" firstAttribute="leading" secondItem="NQB-Yc-wRw" secondAttribute="trailing" constant="14" id="evo-JV-QpI"/>
+                                        <constraint firstItem="NQB-Yc-wRw" firstAttribute="centerY" secondItem="aOg-VL-Lda" secondAttribute="centerY" id="vK9-Fp-ydT"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.26666668057441711" green="0.26666668057441711" blue="0.26666668057441711" alpha="1" colorSpace="deviceRGB"/>
+                                <inset key="separatorInset" minX="45" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <connections>
+                                    <outlet property="icon" destination="NQB-Yc-wRw" id="Zdi-SX-6fj"/>
+                                    <outlet property="title" destination="wgu-Up-Ee6" id="8fP-Ni-915"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Be8-fP-HKE" id="LCG-hI-lcr"/>
+                            <outlet property="delegate" destination="Be8-fP-HKE" id="65q-vb-UTJ"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iRh-QJ-BrI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2118" y="-723"/>
+        </scene>
         <!--List View Controller-->
         <scene sceneID="xyj-4q-saQ">
             <objects>
@@ -99,5 +155,6 @@
     </scenes>
     <resources>
         <image name="octocat" width="242" height="236"/>
+        <image name="postIcon" width="18" height="23"/>
     </resources>
 </document>

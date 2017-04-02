@@ -28,6 +28,9 @@
 		7A47168A1E8B47320098DD0B /* MemoiresUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4716891E8B47320098DD0B /* MemoiresUITests.swift */; };
 		7A71BEA11E90924900431DA8 /* UIColor+MMRAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A71BE9F1E90924900431DA8 /* UIColor+MMRAdditions.swift */; };
 		7A71BEA21E90924900431DA8 /* UIFont+MMRAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A71BEA01E90924900431DA8 /* UIFont+MMRAdditions.swift */; };
+		7A71BEA41E9098B800431DA8 /* CommonListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A71BEA31E9098B800431DA8 /* CommonListViewController.swift */; };
+		7A71BEA71E909CF000431DA8 /* CommonListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A71BEA61E909CF000431DA8 /* CommonListCell.swift */; };
+		7A71BEAA1E909DC200431DA8 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A71BEA91E909DC200431DA8 /* Repository.swift */; };
 		7AE0791B1E8C7CAC005F1C5A /* Argo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE079101E8C7CAC005F1C5A /* Argo.framework */; };
 		7AE0791C1E8C7CAC005F1C5A /* Argo.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE079101E8C7CAC005F1C5A /* Argo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7AE0791D1E8C7CAC005F1C5A /* Curry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE079111E8C7CAC005F1C5A /* Curry.framework */; };
@@ -94,7 +97,7 @@
 		0160ACE2783B383A2996328B /* Bridging-Header.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		031870A0D443DEA73AB5E3E8 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		489835B315F82D9D0C618594 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		5C7AA41A5AAF9A840AB2ADB8 /* BuddyBuildSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BuddyBuildSDK.framework; path = BuddyBuildSDK.framework; sourceTree = "<group>"; };
+		5C7AA41A5AAF9A840AB2ADB8 /* BuddyBuildSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BuddyBuildSDK.framework; sourceTree = "<group>"; };
 		61B9432C6A718CFAB6002B82 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		66B64DF4D0DEA6385D0B7AB1 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		6D70187A3528265F1EDA23E9 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
@@ -120,6 +123,9 @@
 		7A47168B1E8B47320098DD0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7A71BE9F1E90924900431DA8 /* UIColor+MMRAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+MMRAdditions.swift"; sourceTree = "<group>"; };
 		7A71BEA01E90924900431DA8 /* UIFont+MMRAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+MMRAdditions.swift"; sourceTree = "<group>"; };
+		7A71BEA31E9098B800431DA8 /* CommonListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonListViewController.swift; sourceTree = "<group>"; };
+		7A71BEA61E909CF000431DA8 /* CommonListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonListCell.swift; sourceTree = "<group>"; };
+		7A71BEA91E909DC200431DA8 /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		7AE079101E8C7CAC005F1C5A /* Argo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Argo.framework; path = Carthage/Build/iOS/Argo.framework; sourceTree = "<group>"; };
 		7AE079111E8C7CAC005F1C5A /* Curry.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Curry.framework; path = Carthage/Build/iOS/Curry.framework; sourceTree = "<group>"; };
 		7AE079121E8C7CAC005F1C5A /* KeychainSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KeychainSwift.framework; path = Carthage/Build/iOS/KeychainSwift.framework; sourceTree = "<group>"; };
@@ -240,18 +246,14 @@
 		7A4716681E8B47320098DD0B /* Memoires */ = {
 			isa = PBXGroup;
 			children = (
-				7A71BE9F1E90924900431DA8 /* UIColor+MMRAdditions.swift */,
-				7A71BEA01E90924900431DA8 /* UIFont+MMRAdditions.swift */,
-				7A1FB63B1E905A570029DCF4 /* Storyboards.swift */,
-				7A1FB63C1E905A570029DCF4 /* Assets.swift */,
+				7A71BEA51E909CBC00431DA8 /* Assets */,
 				7A4716691E8B47320098DD0B /* AppDelegate.swift */,
 				7A1FB6501E9072A30029DCF4 /* Root */,
-				7A47166D1E8B47320098DD0B /* Main.storyboard */,
-				7A4716701E8B47320098DD0B /* Assets.xcassets */,
-				7A4716721E8B47320098DD0B /* LaunchScreen.storyboard */,
 				7A4716751E8B47320098DD0B /* Info.plist */,
 				7A1FB6391E90424C0029DCF4 /* AuthenticationViewController.swift */,
 				7A1FB63F1E905C8F0029DCF4 /* ListViewController.swift */,
+				7A71BEA81E909D2B00431DA8 /* Common */,
+				7A71BEA91E909DC200431DA8 /* Repository.swift */,
 			);
 			path = Memoires;
 			sourceTree = "<group>";
@@ -272,6 +274,29 @@
 				7A47168B1E8B47320098DD0B /* Info.plist */,
 			);
 			path = MemoiresUITests;
+			sourceTree = "<group>";
+		};
+		7A71BEA51E909CBC00431DA8 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				7A47166D1E8B47320098DD0B /* Main.storyboard */,
+				7A4716701E8B47320098DD0B /* Assets.xcassets */,
+				7A4716721E8B47320098DD0B /* LaunchScreen.storyboard */,
+				7A71BE9F1E90924900431DA8 /* UIColor+MMRAdditions.swift */,
+				7A71BEA01E90924900431DA8 /* UIFont+MMRAdditions.swift */,
+				7A1FB63B1E905A570029DCF4 /* Storyboards.swift */,
+				7A1FB63C1E905A570029DCF4 /* Assets.swift */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		7A71BEA81E909D2B00431DA8 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				7A71BEA31E9098B800431DA8 /* CommonListViewController.swift */,
+				7A71BEA61E909CF000431DA8 /* CommonListCell.swift */,
+			);
+			name = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -415,10 +440,13 @@
 				7A71BEA11E90924900431DA8 /* UIColor+MMRAdditions.swift in Sources */,
 				7A1FB63D1E905A570029DCF4 /* Storyboards.swift in Sources */,
 				7A47166C1E8B47320098DD0B /* RootViewController.swift in Sources */,
+				7A71BEAA1E909DC200431DA8 /* Repository.swift in Sources */,
 				7A1FB6401E905C8F0029DCF4 /* ListViewController.swift in Sources */,
 				7A1FB63A1E90424C0029DCF4 /* AuthenticationViewController.swift in Sources */,
 				7A1FB6431E906D800029DCF4 /* RootView.swift in Sources */,
+				7A71BEA41E9098B800431DA8 /* CommonListViewController.swift in Sources */,
 				7A1FB63E1E905A570029DCF4 /* Assets.swift in Sources */,
+				7A71BEA71E909CF000431DA8 /* CommonListCell.swift in Sources */,
 				7A71BEA21E90924900431DA8 /* UIFont+MMRAdditions.swift in Sources */,
 				7A1FB6521E9072B20029DCF4 /* RootViewModel.swift in Sources */,
 				7A47166A1E8B47320098DD0B /* AppDelegate.swift in Sources */,

@@ -24,11 +24,17 @@ class RootViewController: UIViewController {
     }
     
     func controller(for state: RootViewModel.State) -> UIViewController {
-        if case .unAuthenticated = state {
-            return UINavigationController(rootViewController: StoryboardScene.Main.instantiateAuthenticateWithGithub())
-        }
+        let items = ["BB", "Memoires", "Project"].map(Repository.init)
         
-        return StoryboardScene.Main.instantiateListViewController()
+        let l = StoryboardScene.Main.instantiateCommonList()
+        l.items = items
+        
+        return l
+//        if case .unAuthenticated = state {
+//            return UINavigationController(rootViewController: StoryboardScene.Main.instantiateAuthenticateWithGithub())
+//        }
+//        
+//        return StoryboardScene.Main.instantiateListViewController()
     }
 
 }
