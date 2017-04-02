@@ -31,6 +31,7 @@
 		7A71BEA41E9098B800431DA8 /* CommonListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A71BEA31E9098B800431DA8 /* CommonListViewController.swift */; };
 		7A71BEA71E909CF000431DA8 /* CommonListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A71BEA61E909CF000431DA8 /* CommonListCell.swift */; };
 		7A71BEAA1E909DC200431DA8 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A71BEA91E909DC200431DA8 /* Repository.swift */; };
+		7A71BEB61E91473300431DA8 /* OnboardingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A71BEB51E91473300431DA8 /* OnboardingController.swift */; };
 		7AE0791B1E8C7CAC005F1C5A /* Argo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE079101E8C7CAC005F1C5A /* Argo.framework */; };
 		7AE0791C1E8C7CAC005F1C5A /* Argo.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE079101E8C7CAC005F1C5A /* Argo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7AE0791D1E8C7CAC005F1C5A /* Curry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE079111E8C7CAC005F1C5A /* Curry.framework */; };
@@ -126,6 +127,7 @@
 		7A71BEA31E9098B800431DA8 /* CommonListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonListViewController.swift; sourceTree = "<group>"; };
 		7A71BEA61E909CF000431DA8 /* CommonListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonListCell.swift; sourceTree = "<group>"; };
 		7A71BEA91E909DC200431DA8 /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		7A71BEB51E91473300431DA8 /* OnboardingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingController.swift; sourceTree = "<group>"; };
 		7AE079101E8C7CAC005F1C5A /* Argo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Argo.framework; path = Carthage/Build/iOS/Argo.framework; sourceTree = "<group>"; };
 		7AE079111E8C7CAC005F1C5A /* Curry.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Curry.framework; path = Carthage/Build/iOS/Curry.framework; sourceTree = "<group>"; };
 		7AE079121E8C7CAC005F1C5A /* KeychainSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KeychainSwift.framework; path = Carthage/Build/iOS/KeychainSwift.framework; sourceTree = "<group>"; };
@@ -255,6 +257,7 @@
 				7A1FB63F1E905C8F0029DCF4 /* ListViewController.swift */,
 				7A71BEA81E909D2B00431DA8 /* Common */,
 				7A71BEA91E909DC200431DA8 /* Repository.swift */,
+				7A71BEB51E91473300431DA8 /* OnboardingController.swift */,
 			);
 			path = Memoires;
 			sourceTree = "<group>";
@@ -455,6 +458,7 @@
 				7A71BEA41E9098B800431DA8 /* CommonListViewController.swift in Sources */,
 				7A1FB63E1E905A570029DCF4 /* Assets.swift in Sources */,
 				7A71BEA71E909CF000431DA8 /* CommonListCell.swift in Sources */,
+				7A71BEB61E91473300431DA8 /* OnboardingController.swift in Sources */,
 				7A71BEA21E90924900431DA8 /* UIFont+MMRAdditions.swift in Sources */,
 				7A1FB6521E9072B20029DCF4 /* RootViewModel.swift in Sources */,
 				7A47166A1E8B47320098DD0B /* AppDelegate.swift in Sources */,
