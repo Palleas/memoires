@@ -8,6 +8,10 @@
 
 import UIKit
 
+// Implicit dependencies for ReactiveCocoa
+import MapKit
+import CoreLocation
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
