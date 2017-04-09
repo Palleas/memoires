@@ -1,18 +1,13 @@
 import Foundation
 import ReactiveSwift
 
-protocol StateTokenFactory {
-    associatedtype TokenType: CustomStringConvertible
-    
-    func generate() -> TokenType
+struct Credentials {
+    let clientId: String
+    let clientSecret: String
 }
 
 final class OnboardingController<F: StateTokenFactory>{
 
-    struct Credentials {
-        let clientId: String
-        let clientSecret: String
-    }
     
     struct Token {
         let value: String

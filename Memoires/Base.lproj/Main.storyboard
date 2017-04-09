@@ -73,6 +73,9 @@
                         </constraints>
                     </view>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <connections>
+                        <outlet property="authenticateButton" destination="sKy-V6-CGf" id="GC0-5T-cKl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DIa-KZ-Qrd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

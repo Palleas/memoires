@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  Memoires
-//
-//  Created by Romain Pouclet on 2017-03-28.
-//  Copyright © 2017 Perfectly-Cooked. All rights reserved.
-//
-
 import UIKit
 
 // Implicit dependencies for ReactiveCocoa
@@ -17,11 +9,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    private let root = StoryboardScene.Main.instantiateRoot()
+    private let credentials = Credentials(
+        clientId: keyOrProcessEnv("GITHUB_CLIENT_ID"),
+        clientSecret: keyOrProcessEnv("GITHUB_CLIENT_SECRET")
+    )
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         BuddyBuildSDK.setup()
-        
-
-        let root = StoryboardScene.Main.instantiateRoot()
         
         let window = UIWindow(frame: UIScreen.main.bounds)
         window.rootViewController = root
@@ -34,8 +29,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().barTintColor = .mmrSunflowerYellow
         UINavigationBar.appearance().tintColor = .mmrBlack
 
-        
         return true
     }
 
+    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+        return root.handle(url: url)
+    }
 }

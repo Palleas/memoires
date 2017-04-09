@@ -10,25 +10,46 @@ class RootViewController: UIViewController {
     }
     
     private var viewModel = RootViewModel()
+
+    private let onboarding = OnboardingController(
+        credentials: Credentials(
+            clientId: BuddyBuildSDK.value(forDeviceKey: "GITHUB_CLIENT_ID") ?? ProcessInfo.processInfo.environment["GITHUB_CLIENT_ID"]!,
+            clientSecret: BuddyBuildSDK.value(forDeviceKey: "GITHUB_CLIENT_SECRET") ?? ProcessInfo.processInfo.environment["GITHUB_CLIENT_SECRET"]!
+        ),
+        redirectURI: "memoires://auth",
+        tokenFactory: StringTokenFactory()
+    )
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         let vcProducer = viewModel.state.map(self.controller).producer
         vcProducer.observe(on: UIScheduler()).startWithValues { [weak self] controller in
-            controller.willMove(toParentViewController: self)
-            self?.addChildViewController(controller)
-            self?.mainView.transition(to: controller.view)
-            controller.didMove(toParentViewController: self)
+            self?.transition(to: controller)
         }
+    }
+    
+    func transition(to viewController: UIViewController) {
+        viewController.willMove(toParentViewController: self)
+        addChildViewController(viewController)
+        mainView.transition(to: viewController.view)
+        viewController.didMove(toParentViewController: self)
+        
     }
     
     func controller(for state: RootViewModel.State) -> UIViewController {
         if case .unAuthenticated = state {
-            return UINavigationController(rootViewController: StoryboardScene.Main.instantiateAuthenticateWithGithub())
+            let authenticate = StoryboardScene.Main.instantiateAuthenticateWithGithub()
+            return UINavigationController(rootViewController: authenticate)
         }
         
         return StoryboardScene.Main.instantiateListViewController()
+    }
+    
+    func handle(url: URL) -> Bool {
+        onboarding.finalizeAuthentication(with: url)
+        
+        return true
     }
 
 }

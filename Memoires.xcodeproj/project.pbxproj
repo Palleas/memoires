@@ -58,6 +58,8 @@
 		7A96BF3D1E91B81300008694 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7A96BF3B1E91B81300008694 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7A96BF3E1E91B83D00008694 /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A96BF0A1E91B53500008694 /* ReactiveSwift.framework */; };
 		7A96BF3F1E91B83D00008694 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A96BF0B1E91B53500008694 /* Result.framework */; };
+		7AB948711E99AFDB000D0C89 /* TokenFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB948701E99AFDB000D0C89 /* TokenFactory.swift */; };
+		7AB948731E99B6F6000D0C89 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB948721E99B6F6000D0C89 /* Helpers.swift */; };
 		853E78925CF6388957B581C5 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 031870A0D443DEA73AB5E3E8 /* CoreText.framework */; };
 		B70D5AD1F4130B2758C5890C /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91017374F9B96AD6F5C846DB /* CoreTelephony.framework */; };
 /* End PBXBuildFile section */
@@ -169,6 +171,8 @@
 		7A96BF371E91B80B00008694 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		7A96BF3A1E91B81300008694 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		7A96BF3B1E91B81300008694 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		7AB948701E99AFDB000D0C89 /* TokenFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenFactory.swift; sourceTree = "<group>"; };
+		7AB948721E99B6F6000D0C89 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		91017374F9B96AD6F5C846DB /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		A2B423A455E87064838183A9 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -294,6 +298,8 @@
 				7A71BEA81E909D2B00431DA8 /* Common */,
 				7A71BEA91E909DC200431DA8 /* Repository.swift */,
 				7A71BEB51E91473300431DA8 /* OnboardingController.swift */,
+				7AB948701E99AFDB000D0C89 /* TokenFactory.swift */,
+				7AB948721E99B6F6000D0C89 /* Helpers.swift */,
 			);
 			path = Memoires;
 			sourceTree = "<group>";
@@ -513,6 +519,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AB948711E99AFDB000D0C89 /* TokenFactory.swift in Sources */,
 				7A71BEA11E90924900431DA8 /* UIColor+MMRAdditions.swift in Sources */,
 				7A1FB63D1E905A570029DCF4 /* Storyboards.swift in Sources */,
 				7A47166C1E8B47320098DD0B /* RootViewController.swift in Sources */,
@@ -523,6 +530,7 @@
 				7A71BEA41E9098B800431DA8 /* CommonListViewController.swift in Sources */,
 				7A1FB63E1E905A570029DCF4 /* Assets.swift in Sources */,
 				7A71BEA71E909CF000431DA8 /* CommonListCell.swift in Sources */,
+				7AB948731E99B6F6000D0C89 /* Helpers.swift in Sources */,
 				7A71BEB61E91473300431DA8 /* OnboardingController.swift in Sources */,
 				7A71BEA21E90924900431DA8 /* UIFont+MMRAdditions.swift in Sources */,
 				7A1FB6521E9072B20029DCF4 /* RootViewModel.swift in Sources */,

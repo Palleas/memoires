@@ -81,6 +81,18 @@
             ReferencedContainer = "container:Memoires.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
+      <EnvironmentVariables>
+         <EnvironmentVariable
+            key = "GITHUB_CLIENT_ID"
+            value = "60c4057b1c6c81839b9a"
+            isEnabled = "YES">
+         </EnvironmentVariable>
+         <EnvironmentVariable
+            key = "GITHUB_CLIENT_SECRET"
+            value = "81a344b4e0dde7e9e7b06f57a68f38c37487c22d"
+            isEnabled = "YES">
+         </EnvironmentVariable>
+      </EnvironmentVariables>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
