@@ -18,7 +18,8 @@
 		7A1FB63E1E905A570029DCF4 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1FB63C1E905A570029DCF4 /* Assets.swift */; };
 		7A1FB6401E905C8F0029DCF4 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1FB63F1E905C8F0029DCF4 /* ListViewController.swift */; };
 		7A1FB6431E906D800029DCF4 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1FB6421E906D800029DCF4 /* RootView.swift */; };
-		7A1FB6521E9072B20029DCF4 /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1FB6511E9072B20029DCF4 /* RootViewModel.swift */; };
+		7A40F9911E9B112C00BC340A /* AuthenticationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A40F9901E9B112C00BC340A /* AuthenticationCoordinator.swift */; };
+		7A40F9931E9B121800BC340A /* RootCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A40F9921E9B121800BC340A /* RootCoordinator.swift */; };
 		7A47166A1E8B47320098DD0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4716691E8B47320098DD0B /* AppDelegate.swift */; };
 		7A47166C1E8B47320098DD0B /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A47166B1E8B47320098DD0B /* RootViewController.swift */; };
 		7A47166F1E8B47320098DD0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A47166D1E8B47320098DD0B /* Main.storyboard */; };
@@ -137,7 +138,8 @@
 		7A1FB63C1E905A570029DCF4 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		7A1FB63F1E905C8F0029DCF4 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		7A1FB6421E906D800029DCF4 /* RootView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
-		7A1FB6511E9072B20029DCF4 /* RootViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
+		7A40F9901E9B112C00BC340A /* AuthenticationCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationCoordinator.swift; sourceTree = "<group>"; };
+		7A40F9921E9B121800BC340A /* RootCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootCoordinator.swift; sourceTree = "<group>"; };
 		7A4716661E8B47320098DD0B /* Memoires.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Memoires.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A4716691E8B47320098DD0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7A47166B1E8B47320098DD0B /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -258,7 +260,7 @@
 			children = (
 				7A47166B1E8B47320098DD0B /* RootViewController.swift */,
 				7A1FB6421E906D800029DCF4 /* RootView.swift */,
-				7A1FB6511E9072B20029DCF4 /* RootViewModel.swift */,
+				7A40F9921E9B121800BC340A /* RootCoordinator.swift */,
 			);
 			name = Root;
 			sourceTree = "<group>";
@@ -300,6 +302,7 @@
 				7A71BEB51E91473300431DA8 /* OnboardingController.swift */,
 				7AB948701E99AFDB000D0C89 /* TokenFactory.swift */,
 				7AB948721E99B6F6000D0C89 /* Helpers.swift */,
+				7A40F9901E9B112C00BC340A /* AuthenticationCoordinator.swift */,
 			);
 			path = Memoires;
 			sourceTree = "<group>";
@@ -529,11 +532,12 @@
 				7A1FB6431E906D800029DCF4 /* RootView.swift in Sources */,
 				7A71BEA41E9098B800431DA8 /* CommonListViewController.swift in Sources */,
 				7A1FB63E1E905A570029DCF4 /* Assets.swift in Sources */,
+				7A40F9931E9B121800BC340A /* RootCoordinator.swift in Sources */,
 				7A71BEA71E909CF000431DA8 /* CommonListCell.swift in Sources */,
 				7AB948731E99B6F6000D0C89 /* Helpers.swift in Sources */,
 				7A71BEB61E91473300431DA8 /* OnboardingController.swift in Sources */,
 				7A71BEA21E90924900431DA8 /* UIFont+MMRAdditions.swift in Sources */,
-				7A1FB6521E9072B20029DCF4 /* RootViewModel.swift in Sources */,
+				7A40F9911E9B112C00BC340A /* AuthenticationCoordinator.swift in Sources */,
 				7A47166A1E8B47320098DD0B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
