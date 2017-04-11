@@ -1,6 +1,8 @@
 import Foundation
 import ReactiveSwift
+import ReactiveCocoa
 import UIKit
+import SafariServices
 
 protocol Token {}
 
@@ -15,15 +17,30 @@ final class AuthenticationCoordinator: Coordinator {
     
     let status = MutableProperty<Status>(.unknown)
     
-    override init() {
+    private let onboarding: OnboardingController<StringTokenFactory>
+    
+    init(onboarding: OnboardingController<StringTokenFactory>) {
+        self.onboarding = onboarding
+        
         super.init()
         
         let controller = StoryboardScene.Main.instantiateAuthenticateWithGithub()
-        controller.navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(didTapCancel))
+        _ = controller.view // meh
+        controller.authenticateButton.addTarget(self, action: #selector(didTapAuthenticate), for: .touchUpInside)
         navigationController.viewControllers = [controller]
     }
     
-    @objc func didTapCancel() {
-        status.swap(.cancelled)
+    @objc func didTapAuthenticate() {
+        
+        onboarding.onboard().startWithResult { [weak self] result in
+            switch result {
+            case let .success(.openAuthorizeURL(url)):
+                let browser = SFSafariViewController(url: url)
+                self?.navigationController.present(browser, animated: true, completion: nil)
+            case let .failure(error):
+                print("Got error = \(error)")
+            }
+        }
     }
+    
 }
