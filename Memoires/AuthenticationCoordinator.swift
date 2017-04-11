@@ -4,8 +4,6 @@ import ReactiveCocoa
 import UIKit
 import SafariServices
 
-protocol Token {}
-
 final class AuthenticationCoordinator: Coordinator {
     enum Status {
         case unknown
@@ -31,13 +29,16 @@ final class AuthenticationCoordinator: Coordinator {
     }
     
     @objc func didTapAuthenticate() {
-        
         onboarding.onboard().startWithResult { [weak self] result in
             switch result {
             case let .success(.openAuthorizeURL(url)):
                 let browser = SFSafariViewController(url: url)
                 self?.navigationController.present(browser, animated: true, completion: nil)
+            case let .success(.fetchedToken(token)):
+                self?.navigationController.dismiss(animated: true, completion: nil)
+                print("Fetched token \(token)")
             case let .failure(error):
+                self?.navigationController.dismiss(animated: true, completion: nil)
                 print("Got error = \(error)")
             }
         }

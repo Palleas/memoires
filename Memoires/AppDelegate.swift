@@ -1,4 +1,5 @@
 import UIKit
+import MemoiresKit
 
 // Implicit dependencies for ReactiveCocoa
 import MapKit
@@ -9,10 +10,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-    private var root = RootCoordinator()
+    private var root: RootCoordinator!
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         BuddyBuildSDK.setup()
+        
+        let env = ProcessInfo.processInfo.environment["Environment"].flatMap(Environment.init) ?? .production
+        print("Starting application in env \(env)")
+        
+        root = RootCoordinator(environment: env)
         
         let window = UIWindow(frame: UIScreen.main.bounds)
         window.rootViewController = root.controller
@@ -23,10 +29,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         return true
     }
-
+    
     func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
-//        return root.handle(url: url)
-        return true
+        return root.handle(url: url)
     }
     
     func setupAppearance() {

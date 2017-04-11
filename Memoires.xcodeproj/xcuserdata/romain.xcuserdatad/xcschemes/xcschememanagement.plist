@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>MemoiresKit.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -23,6 +28,11 @@
 			<true/>
 		</dict>
 		<key>7A4716841E8B47320098DD0B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7A5AE0AF1E9C5DC500BA90E9</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -1,12 +1,5 @@
-//
-//  MemoiresUITests.swift
-//  MemoiresUITests
-//
-//  Created by Romain Pouclet on 2017-03-28.
-//  Copyright © 2017 Perfectly-Cooked. All rights reserved.
-//
-
 import XCTest
+import MemoiresKit
 
 class MemoiresUITests: XCTestCase {
         
@@ -14,11 +7,10 @@ class MemoiresUITests: XCTestCase {
         super.setUp()
 
         continueAfterFailure = false
-        XCUIApplication().launch()
-    }
-    
-    override func tearDown() {
-        super.tearDown()
+        
+        let app = XCUIApplication()
+        app.launchEnvironment = ["Environment": Environment.testing.rawValue]
+        app.launch()
     }
     
     func testLogin() {
