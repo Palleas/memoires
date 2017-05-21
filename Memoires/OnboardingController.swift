@@ -1,36 +1,34 @@
 import Foundation
 import ReactiveSwift
 
-protocol StateTokenFactory {
-    associatedtype TokenType: CustomStringConvertible
-    
-    func generate() -> TokenType
+struct Token {
+    let value: String
 }
 
-final class OnboardingController<F: StateTokenFactory>{
+extension Token: AutoEquatable {}
+
+protocol StateTokenFactory {
+
+    func generate() -> Token
+    
+}
+
+final class OnboardingController {
 
     struct Credentials {
         let clientId: String
         let clientSecret: String
     }
     
-    struct Token {
-        let value: String
-    }
-    
     enum OnboardingError: Error {
         case invalidUrl
+        case requestToken(Error)
+        case internalError
     }
 
-    enum State: Equatable {
+    enum State: AutoEquatable {
         case openAuthorizeURL(URL)
-        
-        static func ==(lhs: State, rhs: State) -> Bool {
-            switch (lhs, rhs) {
-            case let (.openAuthorizeURL(url1), .openAuthorizeURL(url2)):
-                return url1 == url2
-            }
-        }
+        case token(Token)
     }
 
     typealias URLResult = (code: String, state: String)
@@ -38,9 +36,9 @@ final class OnboardingController<F: StateTokenFactory>{
 
     private let credentials: Credentials
     private let redirectURI: String
-    private let tokenFactory: F
+    private let tokenFactory: StateTokenFactory
     
-    init(credentials: Credentials, redirectURI: String, tokenFactory: F) {
+    init(credentials: Credentials, redirectURI: String, tokenFactory: StateTokenFactory) {
         self.credentials = credentials
         self.redirectURI = redirectURI
         self.tokenFactory = tokenFactory
@@ -48,7 +46,7 @@ final class OnboardingController<F: StateTokenFactory>{
     
     func onboard() -> SignalProducer<State, OnboardingError> {
         let stateToken = tokenFactory.generate()
-        let authURL = self.url(state: stateToken)
+        let authURL = self.url(with: stateToken)
 
         return SignalProducer(value: .openAuthorizeURL(authURL))
     }
@@ -73,12 +71,12 @@ final class OnboardingController<F: StateTokenFactory>{
         signingToken.input.send(value: (code, state))
     }
     
-    func url(state: F.TokenType) -> URL {
+    func url(with state: Token) -> URL {
         let args: [(String, String)] = [
             ("client_id", credentials.clientId),
             ("redirect_uri", redirectURI),
             ("scope", "user repo"),
-            ("state", state.description),
+            ("state", state.value),
             ("allow_signup", "false"),
         ]
         
@@ -86,6 +84,37 @@ final class OnboardingController<F: StateTokenFactory>{
         comps.queryItems = args.map(URLQueryItem.init)
         
         return comps.url!
-
+    }
+    
+    func requestToken(code: String, state: String) -> SignalProducer<Token, OnboardingError> {
+        let params: [(String, String)] = [
+            ("client_id", credentials.clientId),
+            ("client_secret", credentials.clientSecret),
+            ("code", code),
+            ("redirect_uri", redirectURI),
+            ("state", state)
+        ]
+        
+        var comps = URLComponents(url: URL(string: "https://github.com/login/oauth/access_token")!, resolvingAgainstBaseURL: true)!
+        comps.queryItems = params.map(URLQueryItem.init)
+        
+        var request = URLRequest(url: comps.url!)
+        request.allHTTPHeaderFields = ["Accept": "application/json"]
+        
+        let task = URLSession.shared.reactive.data(with: request)
+            .mapError(OnboardingError.requestToken)
+        
+        return task.attemptMap { data, response in
+            let json = try? JSONSerialization.jsonObject(with: data, options: [])
+            guard let payload = json as? [String: Any] else {
+                return .failure(OnboardingError.internalError)
+            }
+            
+            guard let token = payload["access_token"] as? String else {
+                return .failure(OnboardingError.internalError)
+            }
+            
+            return .success(Token(value: token))
+        }
     }
 }

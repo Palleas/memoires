@@ -1,3 +1,4 @@
+github "AliSoftware/OHHTTPStubs" "6.0.0"
 github "Quick/Nimble" "v7.0.0"
 github "Quick/Quick" "v1.1.0"
 github "ReactiveCocoa/ReactiveCocoa" "b27c62bf8743a6644219a862f2c51c4334f225d6"

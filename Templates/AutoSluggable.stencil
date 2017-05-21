@@ -1,0 +1,32 @@
+// swiftlint:disable file_length
+
+import Foundation
+
+// MARK: - Sluggable for classes, protocols, structs
+{% for type in types.implementing.AutoSluggable %}{% if not type.kind == "enum" %}
+extension {{ type.name }} {
+    var slug: String {
+        let _merged = [{% for variable in type.storedVariables %}
+        {% if variable.annotations.includeInSlug %}
+            {{ variable.name }}{% ifnot forloop.last %},{% endif %}
+        {% endif %}
+        {% endfor %}].joined(separator: "-")
+
+        return slugify(_merged)
+    }
+}
+{% endif %}
+{% endfor %}
+
+fileprivate func slugify(_ string: String) -> String {
+    let s = string
+        .components(separatedBy: CharacterSet.alphanumerics.inverted)
+        .joined(separator: "-")
+        .lowercased()
+
+    let r = try! NSRegularExpression(pattern: "-{2,}", options: [])
+    let s2 = r.stringByReplacingMatches(in: s, options: [], range: NSMakeRange(0, s.characters.count), withTemplate: "-")
+
+    let r2 = try! NSRegularExpression(pattern: "-$", options: [])
+    return r2.stringByReplacingMatches(in: s2, options: [], range: NSMakeRange(0, s2.characters.count), withTemplate: "")
+}

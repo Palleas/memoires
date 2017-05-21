@@ -1,0 +1,5 @@
+sources:
+    - Memoires 
+templates:
+    - Templates
+output: Memoires/Generated
