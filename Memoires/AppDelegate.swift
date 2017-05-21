@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  Memoires
-//
-//  Created by Romain Pouclet on 2017-03-28.
-//  Copyright © 2017 Perfectly-Cooked. All rights reserved.
-//
-
 import UIKit
 
 // Implicit dependencies for ReactiveCocoa
