@@ -55,17 +55,16 @@ class OnboardingSpec: QuickSpec {
             it("rejects invalid completion URL") {
                 let redirectURL = URL(string: "memoires://auth?code=github-auth-code&state=this-is-not-the-right-state")!
                 
-                var error: OnboardingController.OnboardingError?
-                
-                onboarding
-                    .onboard()
-                    .startWithFailed { error = $0 }
-                
-                onboarding.finalizeAuthentication(with: redirectURL)
-                
-                let expected = OnboardingController.OnboardingError.internalError
-                
-                expect(error).toEventually(equal(expected))
+                waitUntil { done in
+                    onboarding
+                        .onboard()
+                        .startWithFailed { error in
+                            expect(error) == OnboardingController.OnboardingError.internalError
+                            done()
+                        }
+                    
+                    onboarding.finalizeAuthentication(with: redirectURL)
+                }
             }
             
             it("request a token") {
