@@ -1,4 +1,5 @@
 import UIKit
+import KeychainSwift
 
 // Implicit dependencies for ReactiveCocoa
 import MapKit
@@ -17,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     var coordinator: AppCoordinator?
     
-    let authService = AuthenticationService()
+    let authService = AuthenticationService(keychain: KeychainSwift())
     var onboardingController: OnboardingController = {
         let cred = OnboardingController.Credentials(
             clientId: keyOrProcessEnv("GITHUB_CLIENT_ID"),

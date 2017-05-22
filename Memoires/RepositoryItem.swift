@@ -1,6 +1,6 @@
 import UIKit
 
-struct Repository: ItemType {
+struct RepositoryItem: ItemType {
     
     let icon: UIImage = Asset.postIcon.image
     

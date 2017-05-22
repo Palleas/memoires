@@ -28,7 +28,7 @@
 		7A71BEA21E90924900431DA8 /* UIFont+MMRAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A71BEA01E90924900431DA8 /* UIFont+MMRAdditions.swift */; };
 		7A71BEA41E9098B800431DA8 /* CommonListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A71BEA31E9098B800431DA8 /* CommonListViewController.swift */; };
 		7A71BEA71E909CF000431DA8 /* CommonListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A71BEA61E909CF000431DA8 /* CommonListCell.swift */; };
-		7A71BEAA1E909DC200431DA8 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A71BEA91E909DC200431DA8 /* Repository.swift */; };
+		7A71BEAA1E909DC200431DA8 /* RepositoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A71BEA91E909DC200431DA8 /* RepositoryItem.swift */; };
 		7A71BEB61E91473300431DA8 /* OnboardingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A71BEB51E91473300431DA8 /* OnboardingController.swift */; };
 		7A71BEBD1E914DE200431DA8 /* OnboardingSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A71BEBC1E914DE200431DA8 /* OnboardingSpec.swift */; };
 		7A7F13E01ED24D27003000AE /* AutoEquatable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7F13DE1ED24D27003000AE /* AutoEquatable.generated.swift */; };
@@ -41,6 +41,11 @@
 		7A7F13FC1ED34EAC003000AE /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7F13FB1ED34EAC003000AE /* AuthenticationService.swift */; };
 		7A7F13FE1ED35489003000AE /* AuthenticationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7F13FD1ED35489003000AE /* AuthenticationCoordinator.swift */; };
 		7A7F14001ED35A74003000AE /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7F13FF1ED35A74003000AE /* Credentials.swift */; };
+		7A7F14061ED39457003000AE /* SelectRepositoryCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7F14051ED39457003000AE /* SelectRepositoryCoordinator.swift */; };
+		7A7F14081ED39591003000AE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7A7F14071ED39591003000AE /* Localizable.strings */; };
+		7A7F140B1ED39626003000AE /* AutoList.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7F14091ED39626003000AE /* AutoList.generated.swift */; };
+		7A7F140C1ED39626003000AE /* L10n.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7F140A1ED39626003000AE /* L10n.swift */; };
+		7A7F140E1ED396BC003000AE /* RepositoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7F140D1ED396BC003000AE /* RepositoryController.swift */; };
 		7A96BF191E91B6DF00008694 /* Argo.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7A96BF061E91B53500008694 /* Argo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7A96BF1B1E91B6DF00008694 /* Curry.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7A96BF071E91B53500008694 /* Curry.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7A96BF1D1E91B6DF00008694 /* KeychainSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7A96BF081E91B53500008694 /* KeychainSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -160,7 +165,7 @@
 		7A71BEA01E90924900431DA8 /* UIFont+MMRAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+MMRAdditions.swift"; sourceTree = "<group>"; };
 		7A71BEA31E9098B800431DA8 /* CommonListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonListViewController.swift; sourceTree = "<group>"; };
 		7A71BEA61E909CF000431DA8 /* CommonListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonListCell.swift; sourceTree = "<group>"; };
-		7A71BEA91E909DC200431DA8 /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		7A71BEA91E909DC200431DA8 /* RepositoryItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryItem.swift; sourceTree = "<group>"; };
 		7A71BEB51E91473300431DA8 /* OnboardingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingController.swift; sourceTree = "<group>"; };
 		7A71BEBC1E914DE200431DA8 /* OnboardingSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingSpec.swift; sourceTree = "<group>"; };
 		7A7F13DE1ED24D27003000AE /* AutoEquatable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoEquatable.generated.swift; sourceTree = "<group>"; };
@@ -172,6 +177,11 @@
 		7A7F13FB1ED34EAC003000AE /* AuthenticationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
 		7A7F13FD1ED35489003000AE /* AuthenticationCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationCoordinator.swift; sourceTree = "<group>"; };
 		7A7F13FF1ED35A74003000AE /* Credentials.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
+		7A7F14051ED39457003000AE /* SelectRepositoryCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectRepositoryCoordinator.swift; sourceTree = "<group>"; };
+		7A7F14071ED39591003000AE /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		7A7F14091ED39626003000AE /* AutoList.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoList.generated.swift; sourceTree = "<group>"; };
+		7A7F140A1ED39626003000AE /* L10n.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = L10n.swift; sourceTree = "<group>"; };
+		7A7F140D1ED396BC003000AE /* RepositoryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryController.swift; sourceTree = "<group>"; };
 		7A96BF061E91B53500008694 /* Argo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Argo.framework; path = Carthage/Build/iOS/Argo.framework; sourceTree = "<group>"; };
 		7A96BF071E91B53500008694 /* Curry.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Curry.framework; path = Carthage/Build/iOS/Curry.framework; sourceTree = "<group>"; };
 		7A96BF081E91B53500008694 /* KeychainSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KeychainSwift.framework; path = Carthage/Build/iOS/KeychainSwift.framework; sourceTree = "<group>"; };
@@ -309,13 +319,10 @@
 				7A1FB6501E9072A30029DCF4 /* Root */,
 				7A71BEAB1E909F5800431DA8 /* Stylesheets */,
 				7A4716691E8B47320098DD0B /* AppDelegate.swift */,
-				7A1FB6391E90424C0029DCF4 /* AuthenticationViewController.swift */,
+				7A7F14041ED39422003000AE /* View Controllers */,
 				7A4716751E8B47320098DD0B /* Info.plist */,
-				7A1FB63F1E905C8F0029DCF4 /* ListViewController.swift */,
-				7A71BEB51E91473300431DA8 /* OnboardingController.swift */,
-				7A71BEA91E909DC200431DA8 /* Repository.swift */,
+				7A71BEA91E909DC200431DA8 /* RepositoryItem.swift */,
 				7A7F13F51ED2856D003000AE /* Sourcery.swift */,
-				7A7F13FF1ED35A74003000AE /* Credentials.swift */,
 			);
 			path = Memoires;
 			sourceTree = "<group>";
@@ -345,6 +352,7 @@
 				7A4716701E8B47320098DD0B /* Assets.xcassets */,
 				7A4716721E8B47320098DD0B /* LaunchScreen.storyboard */,
 				7A47166D1E8B47320098DD0B /* Main.storyboard */,
+				7A7F14071ED39591003000AE /* Localizable.strings */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -370,6 +378,8 @@
 		7A7F13DD1ED24D1D003000AE /* Generated */ = {
 			isa = PBXGroup;
 			children = (
+				7A7F14091ED39626003000AE /* AutoList.generated.swift */,
+				7A7F140A1ED39626003000AE /* L10n.swift */,
 				7A1FB63C1E905A570029DCF4 /* Assets.swift */,
 				7A7F13DE1ED24D27003000AE /* AutoEquatable.generated.swift */,
 				7A7F13DF1ED24D27003000AE /* AutoSluggable.generated.swift */,
@@ -382,7 +392,9 @@
 			isa = PBXGroup;
 			children = (
 				7A7F13F81ED3412B003000AE /* AppCoordinator.swift */,
+				7A71BEB51E91473300431DA8 /* OnboardingController.swift */,
 				7A7F13FD1ED35489003000AE /* AuthenticationCoordinator.swift */,
+				7A7F14051ED39457003000AE /* SelectRepositoryCoordinator.swift */,
 			);
 			name = Coordinator;
 			sourceTree = "<group>";
@@ -390,9 +402,20 @@
 		7A7F13FA1ED34E9D003000AE /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				7A7F13FF1ED35A74003000AE /* Credentials.swift */,
 				7A7F13FB1ED34EAC003000AE /* AuthenticationService.swift */,
+				7A7F140D1ED396BC003000AE /* RepositoryController.swift */,
 			);
 			name = Services;
+			sourceTree = "<group>";
+		};
+		7A7F14041ED39422003000AE /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7A1FB6391E90424C0029DCF4 /* AuthenticationViewController.swift */,
+				7A1FB63F1E905C8F0029DCF4 /* ListViewController.swift */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -510,6 +533,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A4716741E8B47320098DD0B /* LaunchScreen.storyboard in Resources */,
+				7A7F14081ED39591003000AE /* Localizable.strings in Resources */,
 				7A4716711E8B47320098DD0B /* Assets.xcassets in Resources */,
 				7A47166F1E8B47320098DD0B /* Main.storyboard in Resources */,
 			);
@@ -562,6 +586,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A7F140C1ED39626003000AE /* L10n.swift in Sources */,
 				7A7F13E01ED24D27003000AE /* AutoEquatable.generated.swift in Sources */,
 				7A71BEA11E90924900431DA8 /* UIColor+MMRAdditions.swift in Sources */,
 				7A7F14001ED35A74003000AE /* Credentials.swift in Sources */,
@@ -569,7 +594,9 @@
 				7A1FB63D1E905A570029DCF4 /* Storyboards.swift in Sources */,
 				7A47166C1E8B47320098DD0B /* RootViewController.swift in Sources */,
 				7A7F13E11ED24D27003000AE /* AutoSluggable.generated.swift in Sources */,
-				7A71BEAA1E909DC200431DA8 /* Repository.swift in Sources */,
+				7A7F140B1ED39626003000AE /* AutoList.generated.swift in Sources */,
+				7A7F140E1ED396BC003000AE /* RepositoryController.swift in Sources */,
+				7A71BEAA1E909DC200431DA8 /* RepositoryItem.swift in Sources */,
 				7A7F13F91ED3412B003000AE /* AppCoordinator.swift in Sources */,
 				7A1FB6401E905C8F0029DCF4 /* ListViewController.swift in Sources */,
 				7A1FB63A1E90424C0029DCF4 /* AuthenticationViewController.swift in Sources */,
@@ -577,6 +604,7 @@
 				7A71BEA41E9098B800431DA8 /* CommonListViewController.swift in Sources */,
 				7A1FB63E1E905A570029DCF4 /* Assets.swift in Sources */,
 				7A71BEA71E909CF000431DA8 /* CommonListCell.swift in Sources */,
+				7A7F14061ED39457003000AE /* SelectRepositoryCoordinator.swift in Sources */,
 				7A71BEB61E91473300431DA8 /* OnboardingController.swift in Sources */,
 				7A71BEA21E90924900431DA8 /* UIFont+MMRAdditions.swift in Sources */,
 				7A7F13FC1ED34EAC003000AE /* AuthenticationService.swift in Sources */,
