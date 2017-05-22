@@ -19,7 +19,7 @@ dependencies:
 	$(BREW) install sourcery
 
 generate:
-	$(SWIFTGEN) images -t dot-syntax-swift3 -o Memoires/Generated/Assets.swift Memoires/Assets.xcassets
-	$(SWIFTGEN) storyboards -t swift3 -o Memoires/Generated/Storyboards.swift Memoires/Base.lproj/Main.storyboard
+	$(SWIFTGEN) images -t dot-syntax-swift3 -o Memoires/Generated/Assets.swift Memoires/Assets/Assets.xcassets
+	$(SWIFTGEN) storyboards -t swift3 -o Memoires/Generated/Storyboards.swift Memoires/Assets/Base.lproj/Main.storyboard
 	$(SOURCERY)
 
