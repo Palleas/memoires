@@ -47,8 +47,20 @@ final class OnboardingController {
     func onboard() -> SignalProducer<State, OnboardingError> {
         let stateToken = tokenFactory.generate()
         let authURL = self.url(with: stateToken)
-
-        return SignalProducer(value: .openAuthorizeURL(authURL))
+        
+        let code = SignalProducer(signingToken.output)
+            .map(Optional.some)
+            .prefix(value: nil)
+        
+        let url = SignalProducer<URL, OnboardingError>(value: authURL)
+        
+        return SignalProducer.combineLatest(url, code).flatMap(.concat) { url, result -> SignalProducer<State, OnboardingError> in
+            guard let result = result else {
+                return SignalProducer(value: State.openAuthorizeURL(url))
+            }
+            
+            return self.requestToken(code: result.code , state: result.state).map(State.token)
+        }
     }
     
     func finalizeAuthentication(with url: URL) {

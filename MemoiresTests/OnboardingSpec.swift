@@ -1,6 +1,8 @@
 import Quick
 import Nimble
 import OHHTTPStubs
+import ReactiveSwift
+import Result
 
 @testable import Memoires
 
@@ -28,13 +30,26 @@ class OnboardingSpec: QuickSpec {
             }
             
             it("handles auth redirect") {
+                stub(condition: isHost("github.com"), response: { _ -> OHHTTPStubsResponse in
+                    let path = Bundle(for: type(of: self)).path(forResource: "access_token", ofType: "json", inDirectory: "fixtures")!
+                    
+                    return fixture(filePath: path, headers: nil)
+                })
+
                 let redirectURL = URL(string: "memoires://auth?code=github-auth-code&state=state-is-evil")!
+                
+                var state: OnboardingController.State?
+                
+                onboarding
+                    .onboard()
+                    .flatMapError { _ in SignalProducer<OnboardingController.State, NoError>.empty }
+                    .startWithValues { state = $0 }
                 
                 onboarding.finalizeAuthentication(with: redirectURL)
                 
-                let state = onboarding.onboard().skip(first: 1).first()?.value
-                
-                expect(state) == OnboardingController.State.token(Token(value: "fetched-token"))
+                let expected = OnboardingController.State.token(Token(value: "e72e16c7e42f292c6912e7710c838347ae178b4a"))
+
+                expect(state).toEventually(equal(expected))
             }
 
             it("rejects invalid completion URL") {
