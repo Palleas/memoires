@@ -11,8 +11,8 @@ final class RepositoryController {
     }
     
     func all() -> SignalProducer<[RepositoryInfo], Client.Error> {
-        return client.repositories().map({ $0.1 }).collect().map {
-            $0.flatMap { $0 }
+        return client.repositories().collect().map {
+            $0.flatMap { $0.1 }
         }
     }
 }
