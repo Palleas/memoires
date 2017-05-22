@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         let root = StoryboardScene.Main.instantiateRoot()
         
-        let window = UIWindow(frame: UIScreen.main.bounds)
+        let window = UIWindow()
         window.rootViewController = root
         window.makeKeyAndVisible()
         self.window = window

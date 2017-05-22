@@ -38,6 +38,7 @@
 		7A7F13F21ED255E5003000AE /* OHHTTPStubs.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7A7F13F01ED255D8003000AE /* OHHTTPStubs.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7A7F13F41ED25683003000AE /* fixtures in Resources */ = {isa = PBXBuildFile; fileRef = 7A7F13F31ED25683003000AE /* fixtures */; };
 		7A7F13F61ED2856D003000AE /* Sourcery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7F13F51ED2856D003000AE /* Sourcery.swift */; };
+		7A7F13F91ED3412B003000AE /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7F13F81ED3412B003000AE /* AppCoordinator.swift */; };
 		7A96BF191E91B6DF00008694 /* Argo.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7A96BF061E91B53500008694 /* Argo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7A96BF1B1E91B6DF00008694 /* Curry.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7A96BF071E91B53500008694 /* Curry.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7A96BF1D1E91B6DF00008694 /* KeychainSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7A96BF081E91B53500008694 /* KeychainSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -166,6 +167,7 @@
 		7A7F13F01ED255D8003000AE /* OHHTTPStubs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OHHTTPStubs.framework; path = Carthage/Build/iOS/OHHTTPStubs.framework; sourceTree = "<group>"; };
 		7A7F13F31ED25683003000AE /* fixtures */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fixtures; sourceTree = "<group>"; };
 		7A7F13F51ED2856D003000AE /* Sourcery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sourcery.swift; sourceTree = "<group>"; };
+		7A7F13F81ED3412B003000AE /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		7A96BF061E91B53500008694 /* Argo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Argo.framework; path = Carthage/Build/iOS/Argo.framework; sourceTree = "<group>"; };
 		7A96BF071E91B53500008694 /* Curry.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Curry.framework; path = Carthage/Build/iOS/Curry.framework; sourceTree = "<group>"; };
 		7A96BF081E91B53500008694 /* KeychainSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KeychainSwift.framework; path = Carthage/Build/iOS/KeychainSwift.framework; sourceTree = "<group>"; };
@@ -296,6 +298,7 @@
 		7A4716681E8B47320098DD0B /* Memoires */ = {
 			isa = PBXGroup;
 			children = (
+				7A7F13F71ED3411A003000AE /* Coordinator */,
 				7A71BEA51E909CBC00431DA8 /* Assets */,
 				7A71BEA81E909D2B00431DA8 /* Common */,
 				7A7F13DD1ED24D1D003000AE /* Generated */,
@@ -368,6 +371,14 @@
 				7A1FB63B1E905A570029DCF4 /* Storyboards.swift */,
 			);
 			path = Generated;
+			sourceTree = "<group>";
+		};
+		7A7F13F71ED3411A003000AE /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				7A7F13F81ED3412B003000AE /* AppCoordinator.swift */,
+			);
+			name = Coordinator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -543,6 +554,7 @@
 				7A47166C1E8B47320098DD0B /* RootViewController.swift in Sources */,
 				7A7F13E11ED24D27003000AE /* AutoSluggable.generated.swift in Sources */,
 				7A71BEAA1E909DC200431DA8 /* Repository.swift in Sources */,
+				7A7F13F91ED3412B003000AE /* AppCoordinator.swift in Sources */,
 				7A1FB6401E905C8F0029DCF4 /* ListViewController.swift in Sources */,
 				7A1FB63A1E90424C0029DCF4 /* AuthenticationViewController.swift in Sources */,
 				7A1FB6431E906D800029DCF4 /* RootView.swift in Sources */,
