@@ -67,3 +67,5 @@ fastlane/test_output
 Carthage
 Memoires/Assets.swift
 Memoires/Storyboards.swift
+Memoires/Generated/*
+!Memoires/Generated/.gitkeep
