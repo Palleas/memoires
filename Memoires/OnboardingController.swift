@@ -1,5 +1,6 @@
 import Foundation
 import ReactiveSwift
+import Result
 
 struct Token {
     let value: String
@@ -20,9 +21,9 @@ final class OnboardingController {
         let clientSecret: String
     }
     
-    enum OnboardingError: Error {
+    enum OnboardingError: Error, AutoEquatable {
         case invalidUrl
-        case requestToken(Error)
+        case requestToken
         case internalError
     }
 
@@ -114,7 +115,7 @@ final class OnboardingController {
         request.allHTTPHeaderFields = ["Accept": "application/json"]
         
         let task = URLSession.shared.reactive.data(with: request)
-            .mapError(OnboardingError.requestToken)
+            .mapError { _ in OnboardingError.requestToken }
         
         return task.attemptMap { data, response in
             let json = try? JSONSerialization.jsonObject(with: data, options: [])
