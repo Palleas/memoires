@@ -9,26 +9,11 @@ class RootViewController: UIViewController {
         return view as! RootView
     }
     
-    private var viewModel = RootViewModel()
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        let vcProducer = viewModel.state.map(self.controller).producer
-        vcProducer.observe(on: UIScheduler()).startWithValues { [weak self] controller in
-            controller.willMove(toParentViewController: self)
-            self?.addChildViewController(controller)
-            self?.mainView.transition(to: controller.view)
-            controller.didMove(toParentViewController: self)
-        }
+    func transition(to controller: UIViewController) {
+        controller.willMove(toParentViewController: self)
+        addChildViewController(controller)
+        mainView.transition(to: controller.view)
+        controller.didMove(toParentViewController: self)
     }
     
-    func controller(for state: RootViewModel.State) -> UIViewController {
-        if case .unAuthenticated = state {
-            return UINavigationController(rootViewController: StoryboardScene.Main.instantiateAuthenticateWithGithub())
-        }
-        
-        return StoryboardScene.Main.instantiateListViewController()
-    }
-
 }

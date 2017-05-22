@@ -8,10 +8,12 @@ import CoreLocation
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var coordinator: AppCoordinator?
+    
+    let authService = AuthenticationService()
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         BuddyBuildSDK.setup()
-        
 
         let root = StoryboardScene.Main.instantiateRoot()
         
@@ -19,6 +21,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window.rootViewController = root
         window.makeKeyAndVisible()
         self.window = window
+        
+        coordinator = AppCoordinator(rootController: root, authenticationService: authService)
+        coordinator?.start()
 
         UINavigationBar.appearance().titleTextAttributes = [
             NSForegroundColorAttributeName: UIColor.mmrBlack

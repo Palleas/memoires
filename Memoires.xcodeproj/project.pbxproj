@@ -18,7 +18,6 @@
 		7A1FB63E1E905A570029DCF4 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1FB63C1E905A570029DCF4 /* Assets.swift */; };
 		7A1FB6401E905C8F0029DCF4 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1FB63F1E905C8F0029DCF4 /* ListViewController.swift */; };
 		7A1FB6431E906D800029DCF4 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1FB6421E906D800029DCF4 /* RootView.swift */; };
-		7A1FB6521E9072B20029DCF4 /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1FB6511E9072B20029DCF4 /* RootViewModel.swift */; };
 		7A47166A1E8B47320098DD0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4716691E8B47320098DD0B /* AppDelegate.swift */; };
 		7A47166C1E8B47320098DD0B /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A47166B1E8B47320098DD0B /* RootViewController.swift */; };
 		7A47166F1E8B47320098DD0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A47166D1E8B47320098DD0B /* Main.storyboard */; };
@@ -39,6 +38,7 @@
 		7A7F13F41ED25683003000AE /* fixtures in Resources */ = {isa = PBXBuildFile; fileRef = 7A7F13F31ED25683003000AE /* fixtures */; };
 		7A7F13F61ED2856D003000AE /* Sourcery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7F13F51ED2856D003000AE /* Sourcery.swift */; };
 		7A7F13F91ED3412B003000AE /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7F13F81ED3412B003000AE /* AppCoordinator.swift */; };
+		7A7F13FC1ED34EAC003000AE /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7F13FB1ED34EAC003000AE /* AuthenticationService.swift */; };
 		7A96BF191E91B6DF00008694 /* Argo.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7A96BF061E91B53500008694 /* Argo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7A96BF1B1E91B6DF00008694 /* Curry.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7A96BF071E91B53500008694 /* Curry.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7A96BF1D1E91B6DF00008694 /* KeychainSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7A96BF081E91B53500008694 /* KeychainSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -142,7 +142,6 @@
 		7A1FB63C1E905A570029DCF4 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		7A1FB63F1E905C8F0029DCF4 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		7A1FB6421E906D800029DCF4 /* RootView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
-		7A1FB6511E9072B20029DCF4 /* RootViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
 		7A4716661E8B47320098DD0B /* Memoires.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Memoires.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A4716691E8B47320098DD0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7A47166B1E8B47320098DD0B /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -168,6 +167,7 @@
 		7A7F13F31ED25683003000AE /* fixtures */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fixtures; sourceTree = "<group>"; };
 		7A7F13F51ED2856D003000AE /* Sourcery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sourcery.swift; sourceTree = "<group>"; };
 		7A7F13F81ED3412B003000AE /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		7A7F13FB1ED34EAC003000AE /* AuthenticationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
 		7A96BF061E91B53500008694 /* Argo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Argo.framework; path = Carthage/Build/iOS/Argo.framework; sourceTree = "<group>"; };
 		7A96BF071E91B53500008694 /* Curry.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Curry.framework; path = Carthage/Build/iOS/Curry.framework; sourceTree = "<group>"; };
 		7A96BF081E91B53500008694 /* KeychainSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KeychainSwift.framework; path = Carthage/Build/iOS/KeychainSwift.framework; sourceTree = "<group>"; };
@@ -268,7 +268,6 @@
 			children = (
 				7A1FB6421E906D800029DCF4 /* RootView.swift */,
 				7A47166B1E8B47320098DD0B /* RootViewController.swift */,
-				7A1FB6511E9072B20029DCF4 /* RootViewModel.swift */,
 			);
 			path = Root;
 			sourceTree = "<group>";
@@ -298,6 +297,7 @@
 		7A4716681E8B47320098DD0B /* Memoires */ = {
 			isa = PBXGroup;
 			children = (
+				7A7F13FA1ED34E9D003000AE /* Services */,
 				7A7F13F71ED3411A003000AE /* Coordinator */,
 				7A71BEA51E909CBC00431DA8 /* Assets */,
 				7A71BEA81E909D2B00431DA8 /* Common */,
@@ -379,6 +379,14 @@
 				7A7F13F81ED3412B003000AE /* AppCoordinator.swift */,
 			);
 			name = Coordinator;
+			sourceTree = "<group>";
+		};
+		7A7F13FA1ED34E9D003000AE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7A7F13FB1ED34EAC003000AE /* AuthenticationService.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -563,8 +571,8 @@
 				7A71BEA71E909CF000431DA8 /* CommonListCell.swift in Sources */,
 				7A71BEB61E91473300431DA8 /* OnboardingController.swift in Sources */,
 				7A71BEA21E90924900431DA8 /* UIFont+MMRAdditions.swift in Sources */,
+				7A7F13FC1ED34EAC003000AE /* AuthenticationService.swift in Sources */,
 				7A7F13F61ED2856D003000AE /* Sourcery.swift in Sources */,
-				7A1FB6521E9072B20029DCF4 /* RootViewModel.swift in Sources */,
 				7A47166A1E8B47320098DD0B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
