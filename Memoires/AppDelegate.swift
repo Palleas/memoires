@@ -4,6 +4,13 @@ import UIKit
 import MapKit
 import CoreLocation
 
+struct StringTokenFactory: StateTokenFactory {
+    
+    func generate() -> Token {
+        return Token(value: UUID().uuidString)
+    }
+}
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -11,6 +18,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var coordinator: AppCoordinator?
     
     let authService = AuthenticationService()
+    var onboardingController: OnboardingController = {
+        let cred = OnboardingController.Credentials(
+            clientId: keyOrProcessEnv("GITHUB_CLIENT_ID"),
+            clientSecret: keyOrProcessEnv("GITHUB_CLIENT_SECRET")
+        )
+        
+        return OnboardingController(credentials: cred, redirectURI: "memoires://auth", tokenFactory: StringTokenFactory())
+    }()
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         BuddyBuildSDK.setup()
@@ -22,17 +37,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window.makeKeyAndVisible()
         self.window = window
         
-        coordinator = AppCoordinator(rootController: root, authenticationService: authService)
+        coordinator = AppCoordinator(rootController: root, authenticationService: authService, onboardingController: onboardingController)
         coordinator?.start()
 
-        UINavigationBar.appearance().titleTextAttributes = [
-            NSForegroundColorAttributeName: UIColor.mmrBlack
-        ]
-        UINavigationBar.appearance().barTintColor = .mmrSunflowerYellow
-        UINavigationBar.appearance().tintColor = .mmrBlack
-
+        return true
+    }
+    
+    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+        onboardingController.finalizeAuthentication(with: url)
         
         return true
     }
-
 }

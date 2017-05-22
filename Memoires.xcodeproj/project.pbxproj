@@ -39,6 +39,8 @@
 		7A7F13F61ED2856D003000AE /* Sourcery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7F13F51ED2856D003000AE /* Sourcery.swift */; };
 		7A7F13F91ED3412B003000AE /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7F13F81ED3412B003000AE /* AppCoordinator.swift */; };
 		7A7F13FC1ED34EAC003000AE /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7F13FB1ED34EAC003000AE /* AuthenticationService.swift */; };
+		7A7F13FE1ED35489003000AE /* AuthenticationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7F13FD1ED35489003000AE /* AuthenticationCoordinator.swift */; };
+		7A7F14001ED35A74003000AE /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7F13FF1ED35A74003000AE /* Credentials.swift */; };
 		7A96BF191E91B6DF00008694 /* Argo.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7A96BF061E91B53500008694 /* Argo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7A96BF1B1E91B6DF00008694 /* Curry.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7A96BF071E91B53500008694 /* Curry.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7A96BF1D1E91B6DF00008694 /* KeychainSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7A96BF081E91B53500008694 /* KeychainSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -168,6 +170,8 @@
 		7A7F13F51ED2856D003000AE /* Sourcery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sourcery.swift; sourceTree = "<group>"; };
 		7A7F13F81ED3412B003000AE /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		7A7F13FB1ED34EAC003000AE /* AuthenticationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
+		7A7F13FD1ED35489003000AE /* AuthenticationCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationCoordinator.swift; sourceTree = "<group>"; };
+		7A7F13FF1ED35A74003000AE /* Credentials.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
 		7A96BF061E91B53500008694 /* Argo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Argo.framework; path = Carthage/Build/iOS/Argo.framework; sourceTree = "<group>"; };
 		7A96BF071E91B53500008694 /* Curry.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Curry.framework; path = Carthage/Build/iOS/Curry.framework; sourceTree = "<group>"; };
 		7A96BF081E91B53500008694 /* KeychainSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KeychainSwift.framework; path = Carthage/Build/iOS/KeychainSwift.framework; sourceTree = "<group>"; };
@@ -311,6 +315,7 @@
 				7A71BEB51E91473300431DA8 /* OnboardingController.swift */,
 				7A71BEA91E909DC200431DA8 /* Repository.swift */,
 				7A7F13F51ED2856D003000AE /* Sourcery.swift */,
+				7A7F13FF1ED35A74003000AE /* Credentials.swift */,
 			);
 			path = Memoires;
 			sourceTree = "<group>";
@@ -377,6 +382,7 @@
 			isa = PBXGroup;
 			children = (
 				7A7F13F81ED3412B003000AE /* AppCoordinator.swift */,
+				7A7F13FD1ED35489003000AE /* AuthenticationCoordinator.swift */,
 			);
 			name = Coordinator;
 			sourceTree = "<group>";
@@ -558,6 +564,8 @@
 			files = (
 				7A7F13E01ED24D27003000AE /* AutoEquatable.generated.swift in Sources */,
 				7A71BEA11E90924900431DA8 /* UIColor+MMRAdditions.swift in Sources */,
+				7A7F14001ED35A74003000AE /* Credentials.swift in Sources */,
+				7A7F13FE1ED35489003000AE /* AuthenticationCoordinator.swift in Sources */,
 				7A1FB63D1E905A570029DCF4 /* Storyboards.swift in Sources */,
 				7A47166C1E8B47320098DD0B /* RootViewController.swift in Sources */,
 				7A7F13E11ED24D27003000AE /* AutoSluggable.generated.swift in Sources */,
