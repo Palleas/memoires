@@ -5,7 +5,7 @@ import Tentacle
 
 final class SelectRepositoryCoordinator {
     
-    let controller = StoryboardScene.Main.instantiateListViewController()
+    let controller = StoryboardScene.Main.instantiateCommonList()
     
     private let repositories = MutableProperty<[Repository]>([])
     private let repositoryController: RepositoryController
@@ -17,8 +17,13 @@ final class SelectRepositoryCoordinator {
     func start() {
         controller.title = L10n.SelectRepository.title
         
-        repositoryController.all().startWithResult { result in
-            print("Result = \(result)")
+        repositoryController.all().observe(on: UIScheduler()).startWithResult { [weak self] result in
+            switch result {
+            case let .success(repositories):
+                self?.controller.items = repositories.map { RepositoryItem(title: $0.nameWithOwner) }
+            case let .failure(error):
+                fatalError("Got error = \(error)")
+            }
         }
     }
 }
