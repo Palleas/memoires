@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo "VERSION ${BUDDYBUILD_BUILD_NUMBER}:" >> "${BUDDYBUILD_WORKSPACE}/CHANGELOG"
+
+git add "${BUDDYBUILD_WORKSPACE}/CHANGELOG"
+git commit "${BUDDYBUILD_WORKSPACE}/CHANGELOG" -m "Updated Changelog"
+git push
