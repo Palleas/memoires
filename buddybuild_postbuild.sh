@@ -1,7 +1,5 @@
 #!/bin/bash
 
-echo "VERSION ${BUDDYBUILD_BUILD_NUMBER}:" >> "${BUDDYBUILD_WORKSPACE}/CHANGELOG"
-
-git add "${BUDDYBUILD_WORKSPACE}/CHANGELOG"
-git commit "${BUDDYBUILD_WORKSPACE}/CHANGELOG" -m "Updated Changelog"
-git push
+git commit --allow-empty -m "[skip ci] finished build: $BUDDYBUILD_BUILD_NUMBER"
+git tag "bb-$BUDDYBUILD_BUILD_NUMBER"
+git push --tags
