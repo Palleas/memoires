@@ -5,7 +5,9 @@ ROME=rome
 SOURCERY=sourcery
 
 update:
-	$(CARTHAGE) update --no-use-binaries --platform ios
+	$(CARTHAGE) update --no-use-binaries --cache-builds --platform ios
+
+upload: update
 	$(ROME) upload --platform ios
 
 bootstrap: generate
